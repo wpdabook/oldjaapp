@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:padding="5dp"
+        android:id="@+id/index_item_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/index_item_default"
+            android:layout_weight="3"
+            android:layout_width="100px"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                tools:text="1"
+                android:visibility="gone"
+                android:id="@+id/index_item_tv_number"
+                android:layout_alignParentRight="true"
+                android:minWidth="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_item_number_shape"
+                android:textColor="#fff"
+                android:textSize="18px"
+                android:gravity="center"
+
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/index_item_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="沟通协同"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/index_item_tv_jd"
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20px"
+                android:text="（12/23）"
+                android:textColor="#333333"
+                />
+
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</LinearLayout>

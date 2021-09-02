@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/eqpiechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </lecho.lib.hellocharts.view.PieChartView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_one_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_one"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag1" />
+
+            <TextView
+                android:id="@+id/tag_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="建设单位"
+                android:layout_marginLeft="2dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_two"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_color_tag2" />
+
+        <TextView
+            android:id="@+id/tag_02"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="施工单位"
+            android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_three"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_color_tag3" />
+
+        <TextView
+            android:id="@+id/tag_03"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="施工单位"
+            android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--第二排-->
+    <LinearLayout
+        android:id="@+id/lin_two_line"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_four"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag4" />
+
+            <TextView
+                android:id="@+id/tag_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="建设单位"
+                android:layout_marginLeft="2dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_five"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag5" />
+
+            <TextView
+                android:id="@+id/tag_05"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="施工单位"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_sex"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag6" />
+
+            <TextView
+                android:id="@+id/tag_06"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="其他"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--第三排-->
+    <LinearLayout
+        android:id="@+id/lin_three_line"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_seven"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag7" />
+
+            <TextView
+                android:id="@+id/tag_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="建设单位"
+                android:layout_marginLeft="2dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_eight"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag8" />
+
+            <TextView
+                android:id="@+id/tag_08"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="施工单位"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/lin_nine"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="left|center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_color_tag9" />
+
+            <TextView
+                android:id="@+id/tag_09"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="其他"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

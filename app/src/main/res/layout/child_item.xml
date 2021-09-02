@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff">
+        <TextView
+            android:visibility="gone"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/child_item_tv1"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666666"/>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+        <TextView
+            android:id="@+id/child_item_tv2"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666666"/>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+        <TextView
+            android:id="@+id/child_item_tv3"
+
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=""
+
+            android:textColor="#4197ec"/>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+
+        <TextView
+            android:id="@+id/child_item_tv4"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666666"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/child_item_tv_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/tab_color"/>
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/tab_color"/>-->
+
+</LinearLayout>

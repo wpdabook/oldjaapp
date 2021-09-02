@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/gtxtxq_cljl_tv_nr"
+            android:padding="10px"
+            style="@style/text_30px_33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="true"
+           android:text=""
+           />
+
+        <LinearLayout
+            android:padding="3dp"
+            android:orientation="horizontal"
+            android:background="#f4f5f6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5px"
+                android:id="@+id/gtxtxq_cljl_tv_zfr"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/text_30px_33"
+                android:gravity="center_vertical|left"
+                android:text="转发人:"/>
+            <TextView
+                android:id="@+id/gtxtxq_cljl_tv_dw"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/text_30px_33"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/gtxtxq_cljl_tv_zfsj"
+                android:padding="5px"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/text_30px_33"
+                android:text="转发时间:"/>
+        </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</LinearLayout>

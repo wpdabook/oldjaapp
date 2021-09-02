@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.aqsc.NewBaseAddActivity">
+
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_base_add_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.a21zhewang.constructionapp.customview.MyTitleBar>
+
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="项目名称"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/activity_base_add_TextView_pjname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15px"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/myspinner_shape"
+                        android:minHeight="80px"
+                        android:text="请选择项目" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="@string/sgqy_str"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_base_add_TextView_sgqy"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15px"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/myspinner_shape"
+                        android:minHeight="80px"
+                        android:text="请选择区域" />
+
+
+                    <FrameLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15px"
+                        android:minHeight="80px">
+                        <EditText
+                            android:id="@+id/activity_base_add_EditText_scgx"
+                            android:background="@drawable/myspinner_shape"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible"
+                            android:maxLength="20"
+                            android:gravity="center"
+                            android:hint="施工部位"/>
+
+                        <com.a21zhewang.constructionapp.customview.MySpinner
+                            android:visibility="invisible"
+                            android:id="@+id/activity_base_add_MySpinner_sgqy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:text="施工部位"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="楼层"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/lin_lc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/activity_base_add_EditText_lc"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint="楼层"
+                        android:inputType="number"
+                        android:maxLines="1" />
+
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/activity_base_add_MySpinner_lc"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:textSize="14sp"
+                        app:text="F" />
+
+                    <!--   <EditText
+                             android:id="@+id/activity_base_add_EditText_bg"
+                             android:layout_width="150px"
+                             android:layout_height="match_parent"
+                             android:layout_margin="15px"
+                             android:background="@drawable/myspinner_shape"
+                             android:gravity="center"
+                             android:hint=""
+                             android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                             android:inputType="numberSigned|numberDecimal"
+                             android:padding="5px"
+                             android:textSize="14sp" />-->
+
+                    <EditText
+                        android:id="@+id/activity_base_add_EditText_bg"
+                        android:layout_width="150px"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint=""
+                        android:inputType="numberSigned|numberDecimal"
+                        android:padding="5px"
+                        android:textSize="14sp" />
+
+
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/activity_base_add_MySpinner_bg"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:textSize="14sp"
+                        app:text="米" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/spinner_lc"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:textSize="14sp"
+                        />
+                    <EditText
+                        android:id="@+id/ed_lc1"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint="里程"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"/>
+                    <EditText
+                        android:id="@+id/ed_lc2"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint="里程"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:padding="5px"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:text="/"
+                        android:padding="2dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_666666"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <!--  <EditText
+                          android:id="@+id/ed_wz"
+                          android:layout_weight="1"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_marginTop="15px"
+                          android:layout_marginBottom="15px"
+                          android:background="@drawable/myspinner_shape"
+                          android:gravity="center"
+                          android:hint="位置"
+                          android:inputType="numberSigned|numberDecimal"
+                          android:padding="5px"
+                          android:textSize="14sp" />-->
+                    <EditText
+                        android:id="@+id/ed_wz"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15px"
+                        android:layout_marginBottom="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint="位置"
+                        android:inputType="number"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:padding="5px"
+                        android:textSize="14sp" />
+                    <!--<TextView-->
+                    <!--android:text="或"-->
+                    <!--android:padding="2dp"-->
+                    <!--android:textColor="@color/color_666666"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent" />-->
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/spinner_wz"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginRight="15px"
+                        android:textSize="14sp"
+                        app:text="米" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="风险类别"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:padding="15px">
+
+                    <TextView
+                        android:padding="3dp"
+                        android:id="@+id/activity_base_add_TextView_jcxm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/myspinner_shape"
+                        android:minHeight="150px"
+                        android:text="请选择风险类别" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:visibility="visible"
+                            android:background="@drawable/myspinner_shape"
+                            android:id="@+id/activity_base_add_search"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/ic_search_icon"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:text="快捷搜索"
+                            android:textSize="12sp"
+                            android:textColor="@color/color_theme"
+                            android:layout_height="20dp" />
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0.5dp"
+                            android:background="@color/table_line"/>
+                        <TextView
+                            android:background="@drawable/myspinner_shape"
+                            android:id="@+id/activity_base_add_ImageView_Help"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/ic_info"
+                            android:gravity="center"
+                            android:text="风险提示"
+                            android:textSize="12sp"
+                            android:textColor="@color/color_theme"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="24px"
+                            android:layout_width="140px"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#f4f5f6"
+                            android:gravity="center"
+                            android:text="隐患发送" />
+                        <TextView
+                            android:textSize="24px"
+                            android:layout_width="140px"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#f4f5f6"
+                            android:gravity="center"
+                            android:text="工程类型" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/tab_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/risk_project_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15px"
+                            android:background="@drawable/gtxt_jsll_item_shape"
+                            android:gravity="left|center"
+                            android:padding="15px"
+                            android:hint="请选择隐患工程类型"
+                            android:textColor="@color/color_666666"
+                            android:textSize="24px" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textSize="24px"
+                            android:layout_width="140px"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="隐患相对" />
+                        <TextView
+                            android:textSize="24px"
+                            android:layout_width="140px"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="数量范围" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/risk_number_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15px"
+                            android:background="@drawable/gtxt_jsll_item_shape"
+                            android:gravity="left|center"
+                            android:padding="15px"
+                            android:hint="隐患范围"
+                            android:textColor="@color/color_666666"
+                            android:textSize="24px" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="隐患等级"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/risk_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15px"
+                        android:background="@drawable/gtxt_jsll_item_shape"
+                        android:gravity="left|center"
+                        android:padding="15px"
+                        android:hint=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="24px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="整改截止"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <com.a21zhewang.constructionapp.customview.TimeTextView
+                        android:id="@+id/activity_base_add_MyTimeSpinner_zgjz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15px"
+                        android:background="@drawable/myspinner_shape"
+                        android:textColor="#aaaaaa"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="158px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="内容描述"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/activity_base_add_EditText_nrms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15px"
+                        android:background="@drawable/gtxt_jsll_item_shape"
+                        android:gravity="left|top"
+                        android:padding="15px"
+
+                        android:textColor="#aaaaaa"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="158px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="上传图片"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="15px">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/activity_base_add_RecyclerView_imgs"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <ImageView
+                        android:id="@+id/activity_base_add_ImageView_addimg"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/addimgs" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="整改单位"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="15px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.a21zhewang.constructionapp.customview.MySpinner
+                            android:id="@+id/activity_base_add_MySpinner_zgdw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:text="选择单位" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:layout_width="140px"
+                    android:layout_height="match_parent"
+                    android:background="#f4f5f6"
+                    android:gravity="center"
+                    android:text="整改人"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="15px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.a21zhewang.constructionapp.customview.CanyurenView
+                            android:id="@+id/activity_base_add_CanyurenView_zgdw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:str="选择整改人" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:id="@+id/li_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/activity_base_add_TextView_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/bluebtn_bg"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/activity_base_add_TextView_writetag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/bluebtn_bg"
+                    android:gravity="center"
+                    android:text="写入芯片"
+
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

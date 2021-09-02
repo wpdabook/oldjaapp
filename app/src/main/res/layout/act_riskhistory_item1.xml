@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/rank_search_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/select_risk_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_666666"
+                android:textSize="13.5sp" />
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:text="默认数据"
+                android:checked="true"
+                android:textColor="@color/color_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_date_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_week"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_left_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="近一周"
+                android:textColor="@drawable/blue_select_text_bg2"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_mouth"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_right_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="近一月"
+                android:textColor="@drawable/blue_select_text_bg2"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:background="@drawable/style_tag_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="风险排查："
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/risk_number_total"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="整改率："
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/risk_number_total_rate"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="3dp"
+        android:visibility="gone"
+        android:id="@+id/title_remind"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/rank_tv1"
+            android:text="项目名称"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/rank_tv2"
+            android:text="排查项"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/color_green_chart"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/rank_tv3"
+            android:text="隐患数"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/color_theme"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/riskhistory_title"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:gravity="center|left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="6dp"
+            android:background="@color/color_theme"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:text="发起"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="6dp"
+                android:background="@color/color_green_chart"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:text="整改"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.a21zhewang.constructionapp.customview.NoScrollListView
+            android:padding="10dp"
+            android:id="@+id/listchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            >
+        </com.a21zhewang.constructionapp.customview.NoScrollListView>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

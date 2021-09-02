@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+        <TextView
+            android:id="@+id/gtxtxq_cyjl_list_item_tv_name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_666666"/>
+        <TextView
+            android:id="@+id/gtxtxq_cyjl_list_item_tv_position"
+
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/gtxtxq_cyjl_list_item_tv_status"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/gtxtxq_cyjl_list_item_tv_time"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text=""
+            android:layout_marginRight="2dp"
+            android:textColor="#666666"/>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/tab_color"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tab_color"/>
+</LinearLayout>

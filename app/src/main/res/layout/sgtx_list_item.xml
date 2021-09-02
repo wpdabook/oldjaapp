@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myspinner_shape">
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"></TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/sgtx_list_item_tv_bt"
+                            android:padding="2px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_30px_33"
+                            android:gravity="center_vertical|left"
+                            tools:text="分包单位:"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/sgtx_list_item_tv_nr"
+                            android:padding="2px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            style="@style/text_30px_66"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:layout_marginRight="20px"
+        android:layout_width="30px"
+        android:layout_height="match_parent"
+        android:src="@mipmap/enterico"/>
+    <TextView
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="20px"
+        android:id="@+id/sgtx_list_item_tv_isread"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:background="@drawable/sgtx_list_item_shape"/>
+</FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="#F0F0F0">
+                <TextView
+                    android:id="@+id/sgtx_list_item_tv_tsr"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:paddingLeft="2px"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    tools:text="武汉第一建筑公司"
+                     />
+                <TextView
+                    android:id="@+id/sgtx_list_item_tv_dw"
+                    android:layout_weight="1"
+                    android:paddingLeft="2px"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    style="@style/text_30px_66"
+                    tools:text="填写人："
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/sgtx_list_item_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        style="@style/text_30px_66"
+                        android:textSize="25px"
+                        tools:text="填写人："
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

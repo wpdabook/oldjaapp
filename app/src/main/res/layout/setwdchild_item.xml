@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#F0F4F6"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:minHeight="78px"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/setchild_item_isExpand"
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/addico"/>
+        <TextView
+            android:textColor="#272727"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/setchild_item_title"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="名字"
+            />
+        <CheckBox
+            android:id="@+id/setchild_item_CheckBox"
+            android:layout_width="wrap_content"
+            android:background="@drawable/allselect"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_stratAndend"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_jdsb"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:isTimeslot="true"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

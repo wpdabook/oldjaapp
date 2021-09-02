@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_set_check_child"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.zxjc.SetCheckChildActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_set_check_child_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="配置检查项"
+        ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="8dp"
+        android:id="@+id/activity_set_check_child_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

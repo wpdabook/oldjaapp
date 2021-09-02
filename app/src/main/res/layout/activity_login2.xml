@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login_picture"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="60dp"
+    android:focusableInTouchMode="true"
+    tools:context="com.a21zhewang.constructionapp.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+<!--
+            <ImageView
+                android:id="@+id/index_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/index_logo" />-->
+            <TextView
+                android:id="@+id/index_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                 />
+        </LinearLayout>
+        <!--登录UI-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/tilebar_color"
+                app:errorTextAppearance="@style/errorAppearance"
+                app:hintTextAppearance="@style/TextInputAppTheme">
+
+                <EditText
+                    android:id="@+id/activity_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="用户名"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:text=""
+                    android:textColor="@color/tilebar_color" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:textColorHint="@color/tilebar_color"
+                app:hintTextAppearance="@style/TextInputAppTheme">
+
+                <EditText
+                    android:id="@+id/activity_login_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:text=""
+                    android:inputType="textPassword"
+                    android:textColor="@color/tilebar_color" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="18dp"
+                android:padding="12dp"
+                android:text="登录"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/is_forget_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="忘记密码"
+                android:textColor="@color/color_666666"
+                android:textSize="13dip" />
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>-->
+        <!--后缀-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="湖北同是工程科技有限公司"
+                android:textColor="@color/color_666666"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

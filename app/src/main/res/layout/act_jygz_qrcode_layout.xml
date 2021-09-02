@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_basexq_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightvisiable="false"
+        app:righttext=""
+        app:titletext="二维码" />
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_title"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_region"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/color_theme"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/qrimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="通过扫码二维码进入项目整改页面"
+                    android:textColor="@color/color_666666"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/project_name"
+                    android:text="襄阳大厦"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_theme"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+                <ImageView
+                    android:id="@+id/share_picture"
+                    android:textColor="@color/color_666666"
+                    android:src="@mipmap/icon_ysave"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/share_weixin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_666666"
+                    android:src="@mipmap/icon_weixin"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/more_share"
+                    android:src="@mipmap/icon_share"
+                    android:textColor="@color/color_666666"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingBottom="50dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="保存到相册"
+                    android:textColor="@color/color_666666"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:visibility="invisible"
+                    android:text="分享到微信"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="更多分享"
+                    android:textColor="@color/color_666666"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/top_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_baselistview_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+        <RelativeLayout
+            android:id="@+id/activity_baselistview_RelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:clickable="true"
+            android:paddingRight="20px"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="发起"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--<ScrollView-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+       <!--<LinearLayout-->
+           <!--android:orientation="vertical"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="match_parent">-->
+
+            <!--累计风险统计-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:id="@+id/history_linear"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="累计风险统计"
+                        android:padding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="历史数据"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center|right"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_arrow"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:background="@color/table_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+
+                <!--风险分布占比-->
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_weight="5"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_height="0dp">
+
+                    <include
+                        android:id="@+id/foot"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        layout="@layout/act_foucs_pie2" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:background="@color/table_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <!--安全风险-->
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <include
+                    android:id="@+id/foot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    layout="@layout/act_focus_safe2" />
+            </LinearLayout>
+
+            <!--排名情况-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <com.a21zhewang.constructionapp.customview.ViewPagerIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    app:item_count="3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/table_line" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="查看更多"
+            android:textSize="16sp" />
+    </LinearLayout>
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

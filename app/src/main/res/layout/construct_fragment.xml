@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <lecho.lib.hellocharts.view.LineChartView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/cons_chart"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+    </lecho.lib.hellocharts.view.LineChartView>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_red_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="新增人数"
+            android:layout_marginLeft="2dp"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_blue_icon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="累计人数"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

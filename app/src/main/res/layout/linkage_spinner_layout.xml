@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+        android:minHeight="80px"
+    android:padding="15px">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.a21zhewang.constructionapp.customview.MySpinner
+            android:id="@+id/linkage_MySpinner_dw"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10px"
+            app:str="选择单位" />
+        <com.a21zhewang.constructionapp.customview.CanyurenView
+            android:id="@+id/linkage_MySpinner_jsr"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:str="选择接收人" />
+        <LinearLayout
+            android:id="@+id/linkage_LinearLayout_adduser"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@mipmap/addimg"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.a21zhewang.constructionapp.customview.MyListView
+        android:id="@+id/linkage_MyListView_dw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+</LinearLayout>

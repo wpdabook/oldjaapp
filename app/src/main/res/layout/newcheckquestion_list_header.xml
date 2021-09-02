@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请在这里输入内容..."
+    android:padding="5dp"
+    android:textSize="14sp"
+    android:textColor="#AEAEAE"
+    android:minHeight="120dp"
+    android:gravity="left|top"
+    android:background="@null"/>
+
+
+

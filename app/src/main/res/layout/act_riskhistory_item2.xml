@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="已整改率"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_arrow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/safe_tv_1"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/safe_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/safe_tv_2"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/quality_tv_1"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/quality_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/quality_tv_2"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/civilization_tv_1"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/civilization_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/civilization_tv_2"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--第二排-->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="隐患数"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_arrow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/daily_check"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/days_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/daily_general_inspection_items"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/week_of_screening"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/week_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/week_of_screening_total"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/on_the_screen"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.a21zhewang.constructionapp.customview.CircleTextImageView
+                    android:id="@+id/month_rate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    app:citv_border_color="@color/color_circle_blue"
+                    app:citv_border_width="3dp"
+                    app:citv_fill_color="#ffffff"
+                    app:citv_text_color="@android:color/white"
+                    app:citv_text_padding="35dp"
+                    app:citv_text_size="16sp"
+                    app:citv_text_text="0%" />
+                <TextView
+                    android:id="@+id/on_the_screen_total"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

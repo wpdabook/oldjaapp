@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lin_question"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_blue_1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:background="@drawable/bg_grid2"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/question_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="内容"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/bg_grid2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="翻着我们的照片，想念若隐若现，去年的冬天，我们笑得很甜......\n—— 哎哟，不错哦!" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.a21zhewang.constructionapp.customview.NineGridLayout
+                        android:id="@+id/layout_question_nine_grid"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        app:sapcing="4dp" />
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/btn_add_record"
+                        android:text="添加记录"
+                        android:textSize="11sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/corners_bg2"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:id="@+id/lin_request"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_blue_1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:background="@drawable/bg_grid2"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/request_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="过程"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/bg_grid2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="" />
+
+
+                <com.a21zhewang.constructionapp.customview.NineGridLayout
+                    android:id="@+id/layout_request_nine_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    app:sapcing="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

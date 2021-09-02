@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="无此项原因："
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/noitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请在这里输入内容(限100字)..."
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="#AEAEAE"
+        android:minHeight="120dp"
+        android:gravity="left|top"
+        android:background="@null"/>
+</LinearLayout>

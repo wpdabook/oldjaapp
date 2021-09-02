@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gxys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context="com.a21zhewang.constructionapp.ui.gxys.GXYSActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titletext="工序验收"/>
+        <RelativeLayout
+            android:id="@+id/activity_gxys_RelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:paddingRight="20px"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="发起"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.a21zhewang.constructionapp.customview.SearchView
+            android:id="@+id/SearchView_top"
+            android:layout_margin="10px"
+            android:layout_width="match_parent"
+            android:layout_height="88px"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="95px"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="4px"
+            android:paddingTop="4px">
+            <com.a21zhewang.constructionapp.customview.MySpinner
+                android:id="@+id/activity_gxys_MySpinner2"
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="78px"
+                android:layout_marginRight="20px"
+                app:text="验收情况"
+                />
+            <com.a21zhewang.constructionapp.customview.MySpinner
+               android:id="@+id/activity_gxys_MySpinner1"
+                android:layout_marginLeft="20px"
+                android:layout_width="230px"
+                android:layout_height="78px"
+                app:text="分包单位"
+                android:visibility="invisible"
+                />
+
+
+
+        </LinearLayout>
+        <com.a21zhewang.constructionapp.customview.MyRx
+            android:id="@+id/activity_gxys_MyRx"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.a21zhewang.constructionapp.customview.MyRx>
+
+    </LinearLayout>
+
+</LinearLayout>

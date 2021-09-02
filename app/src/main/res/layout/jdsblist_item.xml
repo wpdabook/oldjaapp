@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/x24"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:paddingBottom="@dimen/x24"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title"
+        tools:text="关于Q地块/7号楼/封顶层的安全生产整改"
+        android:textSize="16sp"
+        android:textColor="@color/color_333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/y16"
+        android:layout_below="@+id/tv_title"
+        tools:text="上报人：丘志"
+        android:textColor="@color/color_727272"
+        android:textSize="13sp"
+        android:id="@+id/tv_sbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/x200"
+        android:layout_toRightOf="@+id/tv_sbr"
+        android:layout_marginTop="@dimen/y16"
+        android:layout_below="@+id/tv_title"
+        tools:text="上报时间：2018-03-01"
+        android:textColor="@color/color_727272"
+        android:textSize="13sp"
+        android:id="@+id/tv_sbsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

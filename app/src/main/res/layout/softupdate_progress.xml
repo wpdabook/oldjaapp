@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/soft_down_bg"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.a21zhewang.constructionapp.customview.RoundProgressBarWidthNumber
+            android:id="@+id/update_progress0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:progress="0"
+            app:radius="40dp"
+            android:layout_gravity="center"
+            app:progress_text_size="26sp"
+            app:progress_text_color="#ffffff"
+            app:progress_unreached_color="#03a9f4" />
+
+
+        <TextView
+            android:text="更新中..."
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.a21zhewang.constructionapp.customview.HorizontalProgressBarWithNumber
+            android:id="@+id/update_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:progress="0"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:progress_reached_bar_height="20dp"
+            app:progress_text_color="#03a9f4"
+            app:progress_unreached_color="#ffffff" />
+
+        <com.a21zhewang.constructionapp.customview.HorizontalProgressBarWithNumber
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:progress="0"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:progress_text_color="#03a9f4"
+            app:progress_text_size="20sp"
+            app:progress_unreached_color="#ffFfff" />
+
+    </LinearLayout>
+
+</LinearLayout>

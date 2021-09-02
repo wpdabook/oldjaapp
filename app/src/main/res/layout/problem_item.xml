@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_item_pressed_style"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:clickable="false"
+        android:padding="8dp"
+        android:textColor="@color/color_666666"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/ico"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_check_right_ico"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/cbCheckBox"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/item_select_number_text"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:padding="8dp"
+        android:textColor="@color/color_theme"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_index_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backlin="true"
+            app:righttext="保存"
+            app:rightvisiable="true"
+            app:titletext="选择检查表" />
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEFF0" >
+
+        <ListView
+            android:id="@+id/tablelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#DADBDA"
+            android:dividerHeight="1px"
+            style="@style/scrollstyle"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

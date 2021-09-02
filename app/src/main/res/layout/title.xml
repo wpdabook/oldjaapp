@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="#0084cf"
+        >
+        <ImageView
+            android:id="@+id/touch_icon"
+            android:visibility="gone"
+            android:src="@drawable/ic_touch_app"
+            android:layout_centerInParent="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/title_TB_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="36px"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/title_TB_name_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textSize="26px"
+            android:textColor="#fff"
+            android:layout_marginLeft="40dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:minWidth="50dp"
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+
+                android:id="@+id/title_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_left_back" />
+
+            <TextView
+                android:id="@+id/title_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/title_rightimg"
+            android:clickable="true"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/title_righttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:clickable="true"/>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

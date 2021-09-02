@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_scqkjl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.sgrz.ScqkjlActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80px">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_scqkjl_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="生产情况记录"/>
+    <ImageView
+        android:id="@+id/activity_scqkjl_img_saveandadd"
+        android:layout_marginRight="20px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/addimgicowhite"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        android:padding="20px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <TextView
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:background="#f4f5f6"
+                android:gravity="center"
+                android:text="序号"
+              style="@style/text_30px_33" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/activity_scqkjl_tv_index"
+                    android:paddingLeft="3px"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    style="@style/text_30px_33"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <TextView
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:background="#f4f5f6"
+                android:gravity="center"
+                android:text="施工部位"
+                style="@style/text_30px_33" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/activity_scqkjl_TextView_sgqy"
+                    android:layout_margin="5px"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                   android:textSize="18sp"
+                    android:text="@string/sgqy_str"/>
+                <FrameLayout
+                    android:layout_margin="5px"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    >
+                    <EditText
+                        android:maxLength="20"
+                        android:id="@+id/activity_scqkjl_EditText_scgx"
+                        android:background="@drawable/myspinner_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:hint="施工部位"/>
+
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/activity_scqkjl_MySpinner_scgx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:text="施工部位"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:background="#f4f5f6"
+                android:gravity="center"
+                android:text="楼层"
+                style="@style/text_30px_33" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:id="@+id/lin_lc"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/activity_scqkjl_EditText_lc"
+                        android:padding="2px"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginLeft="5px"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:background="@drawable/myspinner_shape"
+                        android:layout_height="match_parent" />
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/activity_add_scqkjl_MySpinner_lc"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginRight="3px"
+                        app:text="F" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/activity_scqkjl_EditText_bg"
+                        android:padding="5px"
+                        android:layout_width="150px"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5px"
+                        android:background="@drawable/myspinner_shape"
+                        android:gravity="center"
+                        android:hint="标高"
+                        android:textSize="14sp"
+                        android:inputType="numberSigned|numberDecimal"/>
+                    <com.a21zhewang.constructionapp.customview.MySpinner
+                        android:id="@+id/activity_add_scqkjl_MySpinner_bg"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginRight="3px"
+                        app:text="F" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <com.a21zhewang.constructionapp.customview.MySpinner
+                    android:id="@+id/spinner_lc"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
+                    android:textSize="14sp"
+                    />
+                <EditText
+                    android:id="@+id/ed_lc1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/myspinner_shape"
+                    android:gravity="center"
+                    android:hint="里程"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:maxLines="1" />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"/>
+                <EditText
+                    android:id="@+id/ed_lc2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/myspinner_shape"
+                    android:gravity="center"
+                    android:hint="里程"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:padding="5px"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/ed_wz"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15px"
+                    android:layout_marginBottom="15px"
+                    android:background="@drawable/myspinner_shape"
+                    android:gravity="center"
+                    android:hint="位置"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:padding="5px"
+                    android:textSize="14sp" />
+
+                <com.a21zhewang.constructionapp.customview.MySpinner
+                    android:id="@+id/spinner_wz"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15px"
+                    android:layout_marginTop="15px"
+                    android:layout_marginRight="15px"
+                    android:textSize="14sp"
+                    app:text="米" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <TextView
+                android:background="#f4f5f6"
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="施工人数"
+                style="@style/text_30px_33" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+            <EditText
+                android:id="@+id/activity_scqkjl_EditText_rs"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="2px"
+                android:layout_margin="5px"
+                android:layout_width="150px"
+
+                android:background="@drawable/myspinner_shape"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#fff"></LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/tab_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <TextView
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:background="#f4f5f6"
+                android:gravity="center"
+                android:text="生产情况"
+                style="@style/text_30px_33" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/activity_scqkjl_EditText_scqk"
+                    android:layout_margin="5px"
+                    android:padding="5dp"
+                    android:background="@drawable/gtxt_jsll_item_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30px"
+                    android:textColor="#aaaaaa"
+                    android:gravity="left|top"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/tab_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/activity_scqkjl_tv_saveandadd"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bluebtn_bg"
+                android:text="保存并新增"
+                android:textSize="30px"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/activity_scqkjl_tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bluebtn_bg"
+                android:text="保存"
+                android:textSize="30px"
+                android:textColor="#fff"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"/>
+            <TextView
+                android:id="@+id/activity_scqkjl_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bluebtn_bg"
+                android:text="返回"
+                android:textSize="30px"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

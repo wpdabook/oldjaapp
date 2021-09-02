@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_zxjcxq"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.a21zhewang.constructionapp.ui.zxjc.ZxjcxqActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_gtxtxq_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="专项检查" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_zxjcxq_RecyclerView"
+        android:background="@color/color_F0F4F6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

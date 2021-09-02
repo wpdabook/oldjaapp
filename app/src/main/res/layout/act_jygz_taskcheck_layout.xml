@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_basexq_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightvisiable="false"
+        app:righttext="提交"
+        app:titletext="简易告知审核" />
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/color_blue_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="审核内容"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_666666"
+            android:textSize="30px" />
+        <EditText
+            android:padding="10dp"
+            android:id="@+id/edit_des"
+            android:background="@drawable/bg_grid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:hint="请在这里输入描述信息(限300字)..."
+            android:minHeight="160dp"
+            android:maxLength="300"
+            android:textColor="@color/monsoon"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/color_blue_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="审核结果"
+            android:textColor="@color/color_666666"
+            android:textSize="30px" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="center"
+            android:id="@+id/btn_passed"
+            android:background="@drawable/custom_btn_blue_back"
+            android:layout_alignParentBottom="true"
+            android:text="通过"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/btn_no_passed"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_btn_red_back"
+            android:layout_alignParentBottom="true"
+            android:text="不通过"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

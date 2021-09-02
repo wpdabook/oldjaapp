@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context="com.a21zhewang.constructionapp.ui.gxys.fragment.GxysxqzgjlFragment">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_gxysxqzgjl_RecyclerView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:visibility="gone"
+        android:padding="10px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/fragment_gxysxqzgjl_ImageView"
+            android:clickable="true"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@mipmap/addimg"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

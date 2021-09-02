@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/faqigtxt_imglist_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:background="@drawable/shape_photo_bg"
+            />
+
+    <!--<ImageView-->
+        <!--android:layout_margin="3dp"-->
+        <!--android:id="@+id/faqigtxt_imglist_item_img"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+        <!--<ImageView-->
+        <!--android:visibility="invisible"-->
+        <!--android:id="@+id/faqigtxt_imglist_item_img_del"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/ic_delete_icon"/>-->
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/faqigtxt_imglist_item_ms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#565252"
+        tools:text=""
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+</LinearLayout>

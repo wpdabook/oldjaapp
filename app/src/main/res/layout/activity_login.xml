@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login_bg"
+    android:fitsSystemWindows="true"
+    tools:context="com.a21zhewang.constructionapp.ui.LoginActivity">
+<ImageView
+    android:visibility="visible"
+    android:id="@+id/activity_login_imageview_icon"
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+    android:padding="70dp"
+    android:scaleType="fitCenter"
+    android:src="@mipmap/index_ico"
+   />
+
+    <LinearLayout
+
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+
+        android:layout_width="match_parent"
+        android:background="@drawable/login_ed_shape"
+        android:layout_height="78px">
+        <ImageView
+
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:src="@mipmap/id_ico"/>
+        <EditText
+            android:id="@+id/activity_login_ed_id"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:background="@null"
+            android:textSize="28px"
+            android:textColorHint="#c2c2c2"
+            android:gravity="center_vertical"
+            android:hint="@string/login_ed_id_hint"
+            android:maxLines="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_width="match_parent"
+
+        android:background="@drawable/login_ed_shape"
+
+        android:layout_height="78px">
+        <ImageView
+            android:layout_width="78px"
+            android:layout_height="78px"
+            android:src="@mipmap/password_ico"/>
+        <EditText
+            android:id="@+id/activity_login_ed_pw"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:background="@null"
+            android:textSize="28px"
+            android:textColorHint="#c2c2c2"
+            android:gravity="center_vertical"
+            android:hint="@string/login_ed_password_hint"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:id="@+id/activity_login_CheckBox_rbid"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                />
+            <TextView
+                android:id="@+id/activity_login_TextView_rbid"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="记住账号"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:id="@+id/activity_login_CheckBox_autologin"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                />
+            <TextView
+                android:id="@+id/activity_login_TextView_autologin"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="自动登录"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_width="match_parent"
+        android:background="@mipmap/login_btn_bg"
+        android:layout_height="86px">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/activity_login_TextView_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:clickable="true"
+            android:id="@+id/activity_login_TextView_forgetpw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20px"
+            android:text="忘记密码？"
+            android:textColor="#666666"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:textSize="20px"
+        android:text=""
+        android:paddingBottom="40px"
+        />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a21zhewang.constructionapp.ui.xmxx.fragment.zongbaoFragment">
+
+    <ExpandableListView
+        android:id="@+id/zongbaoFragment_ExpandableListView"
+        android:layout_width="match_parent"
+        android:groupIndicator="@null"
+        android:layout_height="match_parent"
+        android:layout_margin="15px"></ExpandableListView>
+
+</com.zhy.autolayout.AutoLinearLayout>

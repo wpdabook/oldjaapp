@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myChart="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/proceduralitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/checklist_level0_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/project_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:maxLength="20"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#666666"
+                        android:textSize="16sp"
+                        tools:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/project_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="17"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/risk_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/complate_people"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="30"
+                        android:text=""
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/rank_rate"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:layout_marginRight="10dp"
+                        android:maxLength="30"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+                    <TextView
+                        android:id="@+id/tv_end_staffday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="30"
+                        android:text=""
+                        android:textColor="@color/color_red"
+                        android:textSize="14sp"
+                        tools:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:maxLength="30"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        tools:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.a21zhewang.constructionapp.customview.HorzinonlChartView
+                        android:layout_marginTop="3dp"
+                        myChart:leftColor="@color/color_green_chart"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:visibility="gone"
+                        android:id="@+id/scrollseekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"/>
+                    <com.a21zhewang.constructionapp.customview.MySeekBar
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/seekbar"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:layout_gravity="center_vertical"
+                        style="@style/CustomSeekbarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/color_wjc"
+                    android:text="97分"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

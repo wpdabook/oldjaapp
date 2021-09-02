@@ -1,0 +1,491 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('D:/debug.keystore')
+            storePassword 'android'
+        }
+    }
+      sourceSets{
+        main{
+            jniLibs.srcDirs = ['libs']
+        }
+      packagingOptions {
+              doNotStrip '*/mips/*.so'
+              doNotStrip '*/mips64/*.so'
+      }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        //  applicationId "com.a21zhewang.constructionapp.test"
+        //地铁
+        // applicationId "com.a21zhewang.construction"
+        //安全生产管理
+        //  applicationId "com.a21zhewang.constructionapp.aqscgl"
+        //长航
+        // applicationId "com.a21zhewang.constructionapp"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 7//内部版本 升级使用  整数累加
+        versionName "1.7.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。   // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+            //  abiFilters  'armeabi-v7a'//,'x86''armeabi',
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86'
+        }
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME : applicationId,
+//                JPUSH_APPKEY : "e22dfeade5c85a8184f577fb", //JPush上注册的包名对应的appkey.
+//                JPUSH_CHANNEL : "developer-default", //用户渠道统计的渠道名称
+//        ]
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    android.applicationVariants.all {
+//        variant ->
+//            variant.outputs.each { output ->
+//                output.outputFile = new File(output.outputFile.parent, "tsapp-vip-" + buildType.name + "-v" +
+//                        defaultConfig.versionName + "("+  defaultConfig.versionCode +")"+".apk");
+//            }
+//    }
+    productFlavors {
+        //武汉长江航运中心
+        cjhy {
+            applicationId "com.a21zhewang.constructionapp"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "cjhy"]
+            versionCode 2
+            versionName "2.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "e22dfeade5c85a8184f577fb", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //安全生产管理
+        aqsc {
+            applicationId "com.a21zhewang.constructionapp3"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "aqsc"]
+            // applicationId "com.a21zhewang.constructionapp.aqscgl"
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "a4b3fb48f39d56a3f3db8e72",
+                    // JPUSH_APPKEY : "e22dfeade5c85a8184f577fb", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //测试版
+        cs {
+            applicationId "com.a21zhewang.constructionapp"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "cs"]
+            versionCode 1
+            versionName "1.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "e22dfeade5c85a8184f577fb", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //武汉建安（市安全站）
+        saqz {
+            applicationId "com.a21zhewang.constructionapp.saqz"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "saqz"]
+            versionCode 5
+            versionName "1.4"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "247e62747ecbf4e8b3bff831", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //汉阳建安
+        hyzj {
+            applicationId "com.a21zhewang.constructionapp.hyzj"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hyzj"]
+            versionCode 11
+            versionName "2.7"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "9c2a7d0803c77eb6f080e381", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //青山建安
+        qs {
+            applicationId "com.a21zhewang.constructionapp.qsja"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qsja"]
+            versionCode 7
+            versionName "1.7"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "8ffcc64d9ab6c6ad74b7d953", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //江夏建安
+        jx {
+            applicationId "com.a21zhewang.constructionapp.jxja"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jxja"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "d740c498ce5db101217e8f1c", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //建安交底
+        whcj {
+            applicationId "com.a21zhewang.constructionapp.whcj"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "whcj"]
+            versionCode 3
+            versionName "1.2"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "b93276da6788a1feadb673cd", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //蔡甸建安
+        cd {
+            applicationId "com.a21zhewang.constructionapp.cdja"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "cdja"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "ac3033f66f1252ac1758ea8c", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //东新建安
+        dhgx {
+            applicationId "com.a21zhewang.constructionapp.dhgx"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "dhgx"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "d0fbdec22334e5c6bad46bb7", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //东西湖建安
+        dxh {
+            applicationId "com.a21zhewang.constructionapp.dxh"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "dxh"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "f2e451faf70ea331fd1fd485", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //硚口建安
+        qk {
+            applicationId "com.a21zhewang.constructionapp.qk"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qk"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "a3a04be3d8a414d317c4e1b9", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //琴台建安
+        qt {
+            applicationId "com.a21zhewang.constructionapp.qt"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qt"]
+            versionCode 2
+            versionName "1.1"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "2da394b7f2b12943079500cf", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //江岸建安
+        ja {
+            applicationId "com.a21zhewang.constructionapp.ja"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "ja"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "f4fb0b9d78264ace5616c9ac", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //洪山建安
+        hs {
+            applicationId "com.a21zhewang.constructionapp.hs"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hs"]
+            versionCode 5
+            versionName "1.4"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "e32c287a3c2b225bfd5be898", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //经开（汉南）建安
+        hn {
+            applicationId "com.a21zhewang.constructionapp.hn"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hn"]
+            versionCode 5
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "a47ba625ffa317a96fbf1f77", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //黄陂建安
+        hp{
+            applicationId "com.a21zhewang.constructionapp.hp"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hp"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "ec300bff8c692fe22cab9dd4", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //新洲建安
+        xz{
+            applicationId "com.a21zhewang.constructionapp.xz"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xz"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "7610d7f15160521405bef807", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //江汉建安
+        jh{
+            applicationId "com.a21zhewang.constructionapp.jh"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jh"]
+            versionCode 5
+            versionName "1.4"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "c33032d2cde9176b3435783e", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //武昌建安
+        wc{
+            applicationId "com.a21zhewang.constructionapp.wc"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wc"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "9229acc9fb28858eaa4ab290", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //广电巡检
+        gdjc{
+            applicationId "com.a21zhewang.constructionapp.gdjc"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "gdjc"]
+            versionCode 1
+            versionName "1.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "50c2708b6d5ff0d111f25403", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //重庆建工
+        cqjg{
+            applicationId "com.a21zhewang.constructionapp.cqjg"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "cqjg"]
+            versionCode 4
+            versionName "1.3"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "d51409c8d17f39346d9686ee", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //安卓建安-V1
+        vipa {
+            applicationId "com.a21zhewang.constructionapp.vipa"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vipa"]
+            versionCode 1
+            versionName "1.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //安卓建安-V2
+        vipb {
+            applicationId "com.a21zhewang.constructionapp.vipb"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vipb"]
+            versionCode 1
+            versionName "1.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        vipc{
+            applicationId "com.a21zhewang.constructionapp.vipc"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vipc"]
+            versionCode 1
+            versionName "1.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+        //VIP(开发者专用)
+        vip {
+            applicationId "com.a21zhewang.constructionapp.vip"
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vip"]
+            versionCode 2
+            versionName "2.0"//
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "431af260f4b6aaedd97e0de3", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "vip", //用户渠道统计的渠道名称
+            ]
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    dexOptions {
+//        incremental true
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //请求网络
+
+    //view注入框架
+    compile project(':recyclerlayout')
+    //标签流布局
+    compile project(':photolibrary')
+    compile project(':lodindshowlibrary')
+    compile project(':mytoast')
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.android.support:cardview-v7:28.0.0'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.zhy:base-adapter:3.0.3'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'com.github.fenjuly:ArrowDownloadButton:9e15b85e8a'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile project(':pickerview')
+    //极光推送
+//    compile 'cn.jiguang.sdk:jpush:3.0.6'
+    compile 'cn.jiguang.sdk:jpush:4.0.6'
+    // 此处以JPush 3.0.5 版本为例。
+//    compile 'cn.jiguang.sdk:jcore:1.1.3'
+    compile 'cn.jiguang.sdk:jcore:2.8.2'
+    // 此处以JCore 1.1.2 版本为例。
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile project(':graffiti')
+    compile project(':droplist')
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+    compile project(':customseekbar')
+    compile project(':custompop')
+    compile 'me.leolin:ShortcutBadger:1.1.22@aar'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:design:28.0.0'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    /*友盟*/
+    compile 'com.umeng.umsdk:analytics:8.0.0'
+    compile 'com.umeng.umsdk:common:2.0.0'
+    compile 'com.umeng.umsdk:utdid:1.1.5.3'
+    //ompile 'me.jessyan:autosize:1.1.2'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile files('libs/volley.jar')
+    compile 'com.nanbox:RippleLayout:1.0.0'
+    compile 'me.zhouzhuo.zzhorizontalprogressbar:zz-horizontal-progressbar:1.1.0'
+    compile files('libs/AMap_Location_V5.2.0_20200915.jar')
+    compile files('libs/AMap_Search_V7.7.0_20201027.jar')
+    compile files('libs/AMap3DMap_7.8.0_AMapNavi_7.8.0_20210104.jar')
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile("com.squareup.okhttp3:okhttp:3.12.0")
+//    compile 'androidx.constraintlayout:constraintlayout:2.0.1'
+//    compile 'com.tencent:mmkv-static:1.2.4'
+}

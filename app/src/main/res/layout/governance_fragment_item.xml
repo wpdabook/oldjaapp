@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/area_name"
+            android:text="区站名称"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLength="45"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lin_project_number"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="项目数"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/project_number"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/yq_manger"
+                android:text="今日隐患数"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/today_risk_number"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="累计隐患数"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/total_risk_number"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="整改率"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/risk_rote"
+                android:textSize="13sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

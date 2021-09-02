@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/auto_linear"
+    android:background="@drawable/corners_gray_bg">
+    <TextView
+        android:background="#f0f4f6"
+        android:id="@+id/zxjc_item_header"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textColor="@color/color_272727"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:minHeight="30dp"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/check_item_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sdsdsafdsfdfdfg"
+            android:gravity="center_vertical"
+            android:textColor="@color/jet"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:src="@drawable/ic_add"
+            android:id="@+id/check_item_addNewCheck"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/tab_color"
+        android:layout_height="0.5dp"
+        />
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lin_problem"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/check_item_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_848484"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/need_dispose_question_look"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看"
+                android:textColor="@color/color_4184df"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:padding="5dp"
+            android:id="@+id/radiogroup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/risk_rb1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="25dp"
+                android:background="@drawable/gray_select_left_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="无此项"
+                android:textColor="@drawable/gray_select_text_bg"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:id="@+id/risk_rb2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="25dp"
+                android:background="@drawable/gray_select_middle_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="安全"
+                android:textColor="@drawable/gray_select_text_bg"
+                android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/risk_rb3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="25dp"
+                android:background="@drawable/gray_select_right_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="有隐患"
+                android:textColor="@drawable/gray_select_text_bg"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px" />
+    <LinearLayout
+        android:id="@+id/error_item_layout"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        >
+        <TextView
+            android:id="@+id/need_dispose_question"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="待处理问题"
+            android:textColor="@color/color_062F6D"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

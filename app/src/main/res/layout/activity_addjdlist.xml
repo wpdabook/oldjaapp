@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.a21zhewang.constructionapp.ui.jdsb.ADDJDlistActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="计划填报"
+        />
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:text="项目名称："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_pj"
+            android:text="请选择项目"
+            android:textSize="16sp"
+            android:textColor="@color/color_333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/color_f7f7f7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:textColor="#F2857F"
+            android:text="* "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="选择阶段："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_jd"
+            android:gravity="center"
+            style="@style/addjdlist"
+            android:text="请选择阶段"
+ />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:textColor="#F2857F"
+            android:text="* "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="计划开始："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TimeTextView
+            android:id="@+id/tv_jhks"
+            style="@style/addjdlist"
+            app:dateFormat="yyyy-MM-dd"
+            app:startTime="1970-01-01 01:00:00"
+ />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:textColor="#F2857F"
+            android:text="* "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="计划结束："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TimeTextView
+            android:id="@+id/tv_jhjs"
+            style="@style/addjdlist"
+            app:dateFormat="yyyy-MM-dd"
+            app:startTime="1970-01-01 01:00:00"
+     />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:textColor="#F2857F"
+            android:text="* "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="实际开始："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TimeTextView
+            android:id="@+id/tv_sjks"
+          style="@style/addjdlist"
+            app:startTime="1970-01-01 01:00:00"
+            app:dateFormat="yyyy-MM-dd" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/y84">
+        <TextView
+            android:textColor="#F2857F"
+            android:text="* "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="目前截止："
+            android:textColor="@color/color_727272"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TimeTextView
+            android:id="@+id/tv_mqjz"
+           style="@style/addjdlist"
+            app:startTime="1970-01-01 01:00:00"
+            app:dateFormat="yyyy-MM-dd" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2" />
+    <TextView
+        android:paddingLeft="@dimen/x40"
+        android:textSize="15sp"
+        android:paddingBottom="@dimen/x20"
+        android:paddingTop="@dimen/x20"
+        android:text="实际完成："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.ljw.customseekbar.CustomSeekBar
+        android:id="@+id/csb_sjwc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@color/color_f7f7f7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"/>
+        <TextView
+            android:paddingLeft="@dimen/x40"
+            android:textSize="15sp"
+            android:paddingBottom="@dimen/x20"
+            android:paddingTop="@dimen/x20"
+            android:text="情况说明："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_margin="@dimen/x10"
+            android:id="@+id/ed_qksm"
+            android:gravity="left|top"
+            android:background="@drawable/login_ed_shape"
+            android:padding="@dimen/x10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y200" />
+        <Button
+            android:id="@+id/btn_save"
+            android:text="保存"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="#0086D1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y64" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

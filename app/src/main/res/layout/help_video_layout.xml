@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!--<VideoView-->
+    <!--android:id="@+id/mVideoView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--自定义VideoView解决视频横竖屏切换横屏状态黑边无法铺满全屏-->
+    <RelativeLayout
+        android:id="@+id/rootVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff0000">
+
+
+        <com.a21zhewang.constructionapp.customview.IVideoView
+            android:id="@+id/mVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginBottom="45dp"
+            android:id="@+id/mProgeress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/img_buffer" />
+
+        <ImageView
+            android:layout_marginBottom="45dp"
+            android:id="@+id/ivReplay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/img_replay"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivExit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/img_close"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/viewBottom"
+            layout="@layout/item_bottom_play_control"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/no_video_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/color_666666"
+            android:text="暂无视频" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

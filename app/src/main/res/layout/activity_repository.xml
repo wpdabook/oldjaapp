@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gtxt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF8FF"
+    tools:context="com.a21zhewang.constructionapp.ui.repository.RepositoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_resy_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            >
+        </com.a21zhewang.constructionapp.customview.MyTitleBar>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
+        <WebView
+            android:id="@+id/res_webview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+         />
+    </LinearLayout>
+</LinearLayout>

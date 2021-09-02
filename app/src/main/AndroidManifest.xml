@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.a21zhewang.constructionapp">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许应用程序访问额外的位置提供命令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!--这个权限用于允许程序在手机屏幕关闭后后台进程仍然运行-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--用户组件导航页蓝牙设备连接提醒-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!--for Samsung-->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+    <!--for htc-->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+
+    <!--for sony-->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+
+    <!--for apex-->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+    <!--for solid-->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+
+    <!--for huawei-->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+
+    <!--for ZUK-->
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+
+    <!--for OPPO-->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+
+    <!--for EvMe-->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+
+    <application
+        android:name=".MyAppCon"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:replace="android:icon,android:theme,android:label">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".ui.LoginActivity2"
+            android:theme="@style/AppTheme.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity-alias
+            android:name=".LoginAliasActivity"
+            android:targetActivity=".ui.LoginActivity2"
+            android:label="VIP定制"
+            android:icon="@mipmap/qr1"
+            android:enabled="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity-alias>
+        <!--测试key-->
+        <!-- <meta-data
+                   android:name="com.amap.api.v2.apikey"
+                   android:value="ffa4b4f9337899f3746debdccf22b974"/>-->
+        <!--安全生产管理-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c57b21f0e0c1d8750de71b43ba23cc61"/>-->
+        <!--青山建安-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ffa4b4f9337899f3746debdccf22b974"/>
+       <!--  <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="72d24d8637b0f88c31fc1df045a4bd5a"/>-->
+        <!--硚口建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ec049fd8c35aa66e6e6f649fe2f9a21f"/>-->
+        <!--琴台建安-->
+       <!--  <meta-data
+             android:name="com.amap.api.v2.apikey"
+             android:value="e646068ec5c880e8e8d89941f924d731"/>-->
+        <!--武昌建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bc7ace7e12b15ccae82e88de416409d5"/>-->
+        <!--洪山建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5897d0403f836fa762cfb0bbcc7e92c5"/>-->
+      <!--  江汉建安  -->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="df80e0d3690896ef69211a1227c6cf34"/>-->
+
+        <!--江岸建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6813d9b8f12fc084e56b0969f863e1a9"/>-->
+        <!--东新建安-->
+      <!--   <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="767f2c060cc80f7164960ea27316f3e1"/>-->
+        <!--蔡甸建安-->
+        <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b81891e994db7ad7c9fa6594ad580d6e"/>-->
+        <!--经开（汉南）建安-->
+       <!--  <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4a01775642e57d4509348b3a64a991de"/>-->
+        <!--江夏建安-->
+        <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="950c1c1c347e0234a11307adedfcb8c1"/>-->
+        <!--黄披建安-->
+        <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8f2a3b86b021c5698a3b03f743a2d119"/>-->
+        <!--新洲建安-->
+       <!-- <meta-data
+           android:name="com.amap.api.v2.apikey"
+           android:value="a6c95e196b86279e9bc624fb74bc1fa7"/>-->
+       <!--东西湖建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a0b52ba49aa89f8eea68cd957d7554c4"/>-->
+        <!--汉阳建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b69f2d5adb562a4b900de3f0b57ab649"/>-->
+        <!--武汉建安-->
+       <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="1a35b6b056326b396cdf8ab4ae3a51df"/>-->
+       <!-- 重庆建工-->
+        <!-- <meta-data
+             android:name="com.amap.api.v2.apikey"
+             android:value="5b84f0b0d49940bf9f9684b78a51e219"/>-->
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+       <!-- <meta-data
+            android:name="design_width_in_dp"
+            android:value="360"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640"/>-->
+        <meta-data android:name="android.max_aspect"
+            android:value="2.1"/>
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.IndexActivity" />
+        <activity android:name=".ui.IndexActivity2" />
+        <activity android:name=".ui.PersonCenterActivity" />
+        <activity android:name=".ui.gtxtiu.GTXTActivity" />
+        <activity android:name=".ui.sgrz.SgrzActivity" />
+        <activity android:name=".ui.sgrz.SgrzlrActivity" />
+        <activity android:name=".ui.gtxtiu.GtxtxqActivity" />
+        <activity android:name=".ui.gtxtiu.AddGtxtActivity" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize|navigation" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileproviderpath" />
+
+        </provider>
+
+        <activity android:name=".ui.sgrz.SgrzxqActivity" />
+        <activity android:name=".ui.gtxtiu.GtxtzfActivity" />
+        <activity android:name=".ui.sgrz.ScqkjlActivity" />
+        <activity android:name=".ui.usercenter.UpPasswordActivity" />
+        <activity android:name=".ui.gtxtiu.YclActivity" />
+        <activity android:name=".ui.aqsc.AqscActivity" />
+        <activity android:name=".ui.zljd.ZljdActivity" />
+        <activity android:name=".ui.wmsg.WmsgActivity" />
+        <activity android:name=".ui.aqsc.AqscxqActivity" />
+        <activity android:name=".ui.zljd.ZljdxqActivity" />
+        <activity android:name=".ui.wmsg.WmsgxqActivity" />
+        <activity android:name=".ui.aqsc.AqscAddActivity" />
+        <activity android:name=".ui.zljd.ZljdAddActivity" />
+        <activity android:name=".ui.wmsg.WmsgAddActivity" />
+        <activity android:name=".ui.sgtx.SgtxActivity" />
+        <activity android:name=".ui.tzgg.TzggActivity" />
+        <activity android:name=".ui.tzgg.TzggxqActivity" />
+        <activity android:name=".ui.tzgg.AddTzggActivity" />
+        <activity android:name=".ui.xmxx.XmxxActivity" />
+        <activity android:name=".base.YzgActivity" />
+        <activity android:name=".ui.gtxtiu.ZF2Activity" />
+        <activity android:name=".ui.gxys.GXYSActivity" />
+        <activity android:name=".ui.gxys.GxysxqActivity" />
+        <activity android:name=".ui.gxys.AddZgjlActivity" />
+        <activity android:name=".ui.gxys.AddGxysActivity" />
+        <activity android:name=".ui.repository.RepositoryActivity" />
+        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.dbsx.ToDoActivity"/>
+        <!-- 危大检查 -->
+        <activity android:name=".ui.wdjc.WdjcActivity" />
+        <activity android:name=".ui.wdjc.WdAQXQActivity" />
+        <activity android:name=".ui.wdjc.WdjcxqActivity" />
+        <activity android:name=".ui.wdjc.WdNewCheckQuestionActivity" />
+        <activity android:name=".ui.wdjc.WdSetCheckChildActivity" />
+        <activity android:name=".ui.wdjc.WdSetCheckListActivity" />
+        <activity android:name=".ui.wdjc.WdSuspendingQuestionActivity" />
+        <activity android:name=".ui.wdjc.WdTableListActivity" />
+        <activity android:name=".ui.jdzf.Act_Jdzf" />
+        <activity android:name=".ui.jdzf.Act_JdzfDetail" />
+        <activity android:name=".ui.Act_WebView" />
+        <activity android:name=".ui.notice.Act_Notice" />
+        <activity android:name=".ui.notice.Act_NoticeDetail" />
+        <activity android:name=".ui.risk.Act_RiskReport" />
+        <activity android:name=".ui.risk.Act_RiskReportAdd" />
+        <activity android:name=".ui.risk.Act_SelectRiskType" />
+        <activity android:name=".ui.risk.Act_RiskReportDetail" />
+        <activity android:name=".ui.yiqing.Act_YiQingCheck"></activity>
+        <activity android:name=".ui.yiqing.Act_YiQingCheckDetail"></activity>
+        <activity android:name=".ui.yiqing.Act_YiQingInspection" android:windowSoftInputMode="adjustPan"></activity>
+
+        <!--汇总统计-->
+        <activity android:name=".ui.tab.Act_Focus"></activity>
+        <activity android:name=".ui.tab.Act_Rank"></activity>
+        <activity android:name=".ui.tab.Act_RiskHistory"></activity>
+        <activity android:name=".ui.tab.Act_RiskHiddenDanger"></activity>
+        <activity android:name=".ui.tab.Act_SelectRiskProject"></activity>
+        <activity android:name=".ui.tab.Act_SafetyQualityCivilization"></activity>
+        <activity android:name=".ui.tab.Act_Rectification"></activity>
+        <activity android:name=".ui.check.Act_Procedural"></activity>
+        <activity android:name=".ui.check.Act_ProceduralDetail"></activity>
+        <activity android:name=".ui.check.Act_ProceduralInspection"></activity>
+        <activity android:name=".ui.tab.Act_Tab1"></activity>
+        <activity android:name=".ui.tab.Act_Tab2"></activity>
+        <activity android:name=".ui.tab.Act_Tab3"></activity>
+        <activity android:name=".ui.check.Act_ProceduralHistory"></activity>
+        <activity android:name=".ui.check.Act_ProceduralHistoryDetail"></activity>
+        <activity android:name=".ui.tab.Act_Supervisor"></activity>
+        <activity android:name=".ui.check.Act_ProceduralProblem"></activity>
+        <activity android:name=".ui.tab.Act_RankMoreDetail"></activity>
+        <activity android:name=".ui.tab.Act_RankDetail2"></activity>
+        <activity android:name=".ui.tab.Act_YQInfo"></activity>
+        <activity android:name=".ui.wdjc.WdjcActivity2"></activity>
+        <activity android:name=".ui.wdjc.WdjcxqActivity2"></activity>
+        <activity android:name=".ui.set.FeedbackActivity"></activity>
+        <activity android:name=".ui.set.SelectProblemActivity"></activity>
+        <activity android:name=".ui.set.FeedbackHistoryActivity"></activity>
+        <activity android:name=".ui.set.HelpWordActivity"></activity>
+        <activity android:name=".ui.set.HelpVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"></activity>
+        <activity android:name=".ui.wdjc.SafeInfoActivity"></activity>
+        <activity android:name=".ui.tab.Act_YiQingTab"></activity>
+        <activity android:name=".ui.tab.Act_ReportProject"></activity>
+        <activity android:name=".ui.tab.Act_YiQingTabMore"></activity>
+        <activity android:name=".ui.report.Act_ProgressReport"></activity>
+        <activity android:name=".ui.report.Act_ProgressReportAdd"></activity>
+        <activity android:name=".base.BaseAddSearchActivity"></activity>
+        <activity android:name=".ui.menu.Act_Menu"></activity>
+        <activity android:name=".ui.menu.Act_CityMoreInfo"></activity>
+        <activity android:name=".ui.xmxx.Act_SearchProject"></activity>
+        <activity android:name=".ui.wdjc.DeleteItemActivity"></activity>
+        <activity android:name=".ui.wggl.WGImLActivity"></activity>
+        <activity android:name=".ui.wggl.WGGLActivity"></activity>
+        <activity android:name=".ui.wggl.AddWgActivity"></activity>
+        <activity android:name=".ui.wggl.WgxqActivity"></activity>
+        <activity android:name=".ui.wggl.WGSelectTypeActivity"></activity>
+        <activity android:name=".ui.wdjc.ProjectStatusActivity"></activity>
+        <activity android:name=".ui.wdjc.WdjcxqActivity3"></activity>
+        <activity android:name=".ui.set.PlayInfoActivity"></activity>
+        <activity android:name=".ui.kqgl.Act_Kqgl"></activity>
+        <!--专项巡查-->
+        <activity android:name=".ui.inspection.Act_AddInspection"></activity>
+        <activity android:name=".ui.inspection.Act_AddInspection2"></activity>
+        <activity android:name=".ui.inspection.Act_AddTypeInspection"></activity>
+        <activity android:name=".ui.inspection.Act_CheckGroupItem"></activity>
+        <activity android:name=".ui.inspection.Act_CheckTabList"></activity>
+
+        <activity android:name=".ui.inspection.Act_GroupInspectionDetail"></activity>
+        <activity android:name=".ui.inspection.Act_Inspection"></activity>
+        <activity android:name=".ui.inspection.Act_InspectionDetail"></activity>
+        <activity android:name=".ui.inspection.Act_InspectionHistory"></activity>
+        <activity android:name=".ui.inspection.Act_InspectionHistoryDetail"></activity>
+
+        <activity android:name=".ui.inspection.Act_InspectionList"></activity>
+        <activity android:name=".ui.inspection.Act_InspectionProblem"></activity>
+        <activity android:name=".ui.inspection.Act_InspectionTabDetail"></activity>
+        <activity android:name=".ui.inspection.Act_NewInspectionHistory"></activity>
+        <activity android:name=".ui.inspection.MapActivity"></activity>
+        <activity android:name=".ui.inspection.ProjectRegisterActivity"></activity>
+        <activity android:name=".ui.inspection.SelectCompanyActivity"></activity>
+        <!-- 极光推送 广播 -->
+        <!--<receiver-->
+            <!--android:name=".receiver.JPushReceiver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
+
+                <!--&lt;!&ndash; 自定义消息的广播 &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />-->
+                <!--&lt;!&ndash; 通知广播 &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />-->
+                <!--&lt;!&ndash; 用户点击了通知 &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />-->
+
+                <!--<category android:name="com.a21zhewang.constructionapp" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--极光推送自定义接收-->
+        <receiver
+            android:name=".receiver.PushMessageReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.a21zhewang.constructionapp" />
+            </intent-filter>
+        </receiver>
+        <!-- since 3.3.0 Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <!--User defined.  For test only 继承自cn.jpush.android.service.JCommonService-->
+        <service
+            android:name=".receiver.PushService"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <!--<service-->
+            <!--android:name="cn.jpush.android.service.DaemonService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.intent.DaemonService" />-->
+
+                <!--<category android:name="${applicationId}" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <activity android:name=".ui.zxjc.ZxjcActivity" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity android:name=".ui.zxjc.AddzxjcActivity" />
+        <activity android:name=".ui.zxjc.TableListActivity" />
+        <activity android:name=".ui.zxjc.SetCheckListActivity" />
+        <activity android:name=".ui.zxjc.SetCheckChildActivity" />
+        <activity android:name=".ui.zxjc.NewCheckQuestionActivity" />
+        <activity android:name=".ui.zxjc.SuspendingQuestionActivity" />
+        <activity android:name=".ui.zxjc.ZxjcxqActivity" />
+        <activity android:name=".ui.SelectProjectActivity" />
+        <activity android:name=".ui.SelectTypesActivity" />
+        <activity android:name=".ui.SelectSgqyActivity" />
+        <activity android:name=".ui.index.LdActivity" />
+        <activity android:name=".ui.index.LdIndexActivity" />
+        <activity android:name=".ui.SelectSGBWActivity" />
+        <activity android:name=".base.XFActivity" />
+        <activity android:name=".ui.jdsb.JDSBLISTActivity" />
+        <activity android:name=".ui.zxjc.AQXQActivity" />
+        <activity android:name=".ui.jdsb.ADDJDActivity" />
+        <activity android:name=".ui.jdsb.ADDJDlistActivity" />
+        <activity android:name=".ui.jdsb.JDSBXQActivity" />
+        <activity android:name=".ui.wdpz.PZWDActivity" />
+        <activity android:name=".ui.wdpz.SetwdCheckChildActivity" />
+        <activity android:name=".ui.wdpz.SetwdCheckListActivity" />
+        <activity android:name=".ui.wdpz.WDPZLISTActivity" />
+        <activity android:name=".ui.wdpz.PZWDXQActivity"></activity>
+        <activity android:name=".ui.risk.SelectRiskProject"></activity>
+        <activity android:name=".ui.tab.Act_SafetyRisk"></activity>
+        <activity android:name=".ui.tab.Act_RankDetail"></activity>
+        <activity android:name=".ui.check.Act_AddTypeProcedural"></activity>
+        <activity android:name=".ui.report.Act_SelectToolsType"></activity>
+        <activity android:name=".ui.report.Act_ProgressReportDetail"></activity>
+        <activity android:name=".ui.wdjc.WdjcProjectInfoActivity"></activity>
+        <activity android:name=".ui.dxzf.Act_DxzfAddInfo"></activity>
+        <activity android:name=".ui.dxzf.Act_DXSelectType"></activity>
+        <activity android:name=".ui.dxzf.Act_DXSelectCompany"></activity>
+        <activity android:name=".ui.dxzf.Act_Dxzf"></activity>
+        <activity android:name=".ui.dxzf.Act_DxzfDetail"></activity>
+        <activity android:name=".ui.dxzf.Act_Dxreply"></activity>
+        <activity android:name=".ui.dxzf.Act_ReplyDetail"></activity>
+        <activity android:name=".ui.check.Act_HistoryDetail"></activity>
+        <activity android:name=".ui.set.PeopleInfoActivity"></activity>
+        <activity android:name=".ui.set.ProjectRegisterActivity"></activity>
+        <activity android:name=".ui.set.SelectCompanyActivity"></activity>
+        <activity android:name=".ui.set.MapActivity"></activity>
+        <activity android:name=".ui.map.Act_MapNavigation"></activity>
+        <activity android:name=".ui.map.Act_NavigationMap"></activity>
+        <activity android:name=".ui.map.Act_MapSearch"></activity>
+        <activity android:name=".ui.zddb.Act_Zddb"></activity>
+        <activity android:name=".ui.zddb.Act_ZddbAdd"></activity>
+        <activity android:name=".ui.zddb.Act_ZddbDetail"></activity>
+        <activity android:name=".ui.zddb.Act_ZddbToDo"></activity>
+        <activity android:name=".ui.zddb.Act_ZddbCheck"></activity>
+        <activity android:name=".ui.zddb.Act_ZddbDetailInfo"></activity>
+        <activity android:name=".ui.jygz.Act_Jygz"></activity>
+        <activity android:name=".ui.jygz.Act_JygzAdd"></activity>
+        <activity android:name=".ui.jygz.Act_JygzAddRecord"></activity>
+        <activity android:name=".ui.jygz.Act_JygzDetail"></activity>
+        <activity android:name=".ui.jygz.Act_JygzQrCode"></activity>
+        <activity android:name=".ui.jygz.Act_JygzRectHistory"></activity>
+        <activity android:name=".ui.jygz.Act_JygzSelectPeople"></activity>
+        <activity android:name=".ui.jygz.Act_JygzSelectUnit"></activity>
+        <activity android:name=".ui.jygz.Act_JygzSelectUnitType"></activity>
+        <activity android:name=".ui.jygz.Act_JygzTaskCheck"></activity>
+        <activity android:name=".ui.jygz.Jygz_SendTask"></activity>
+        <activity android:name=".ui.check.Act_ProceduralInspectionReback"></activity>
+        <activity android:name=".ui.check.Act_AddTypeProceduralReback"></activity>
+        <activity android:name=".ui.rcjd.Act_Rcjd"></activity>
+        <activity android:name=".ui.rcjd.Act_RcjdAddInfo"></activity>
+        <activity android:name=".ui.rcjd.Act_RcjdDetail"></activity>
+        <activity android:name=".ui.rcjd.Act_Rcjdreply"></activity>
+        <activity android:name=".ui.rcjd.Act_RcjdReplyDetail"></activity>
+        <activity android:name=".ui.rcjd.Act_RcjdSelectCompany"></activity>
+        <activity android:name=".ui.rcjd.Act_RcjdSelectType"></activity>
+        <activity android:name=".ui.risk.Act_SubdivisionType"></activity>
+        <activity android:name=".ui.kqgl.Act_KqglDetail"></activity>
+        <activity android:name=".ui.video.Act_Surveillance"></activity>
+        <activity android:name=".ui.video.Act_SurveillanceDetail"></activity>
+        <activity android:name=".ui.video.Act_WebVideo"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".ui.notice.Act_NoticeReply"></activity>
+        <activity android:name=".ui.notice.Act_NoticeDetailReply"></activity>
+        <activity android:name=".ui.task.Act_AddTask"></activity>
+        <activity android:name=".ui.task.Act_AddTaskSelectCompany"></activity>
+        <activity android:name=".ui.task.Act_AddTaskSelectUser"></activity>
+        <activity android:name=".ui.task.Act_TaskCheck"></activity>
+        <activity android:name=".ui.task.Act_TaskDetail"></activity>
+        <activity android:name=".ui.task.Act_TaskList"></activity>
+        <activity android:name=".ui.task.Act_TaskToDo"></activity>
+        <activity android:name=".ui.nfile.Act_AddNoticeFile"></activity>
+        <activity android:name=".ui.nfile.Act_AddNoticeSelectCompany"></activity>
+        <activity android:name=".ui.nfile.Act_NoticeDetail"></activity>
+        <activity android:name=".ui.nfile.Act_NoticeFile"></activity>
+        <activity android:name=".ui.nfile.Act_NoticeFileToDo"></activity>
+        <activity android:name=".ui.nfile.Act_NoticeReplyDetail"></activity>
+        <activity android:name=".ui.aqsc.Act_SelectProjectStatus"></activity>
+    </application>
+
+</manifest>

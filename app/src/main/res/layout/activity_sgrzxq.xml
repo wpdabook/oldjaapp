@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sgrzxq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context="com.a21zhewang.constructionapp.ui.sgrz.SgrzxqActivity">
+
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="施工日志"></com.a21zhewang.constructionapp.customview.MyTitleBar>
+
+    <TextView
+        android:id="@+id/activity_sgrzxq_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:background="#fff"
+        style="@style/text_30px_33"
+        android:text="武汉大厦第一标段施工日志" />
+
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E6EBEF" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="100px">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:layout_weight="2"
+                            android:background="#F0F4F6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            style="@style/text_30px_33"
+                            android:text="工程名称"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:id="@+id/activity_sgrzxq_tv_pjname"
+
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:text="中央商场"
+                            style="@style/text_30px_33"
+                            android:layout_marginLeft="5px"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:background="#F0F4F6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            style="@style/text_30px_33"
+                            android:text="日期"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:id="@+id/activity_sgrzxq_tv_time"
+
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            style="@style/text_30px_33"
+                            android:layout_marginLeft="5px"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E6EBEF" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:layout_weight="2"
+                            android:background="#F0F4F6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            style="@style/text_30px_33"
+                            android:text="施工单位"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:id="@+id/activity_sgrzxq_tv_sgdw"
+
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:text="中央商场"
+                            style="@style/text_30px_33"
+                            android:layout_marginLeft="5px"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:background="#F0F4F6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="填写人"
+                            style="@style/text_30px_33"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:id="@+id/activity_sgrzxq_tv_addman"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            style="@style/text_30px_33"
+                            android:layout_marginLeft="5px"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E6EBEF" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:layout_weight="2"
+                            android:background="#F0F4F6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            style="@style/text_30px_33"
+                            android:text="天气"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                        <TextView
+                            android:id="@+id/activity_sgrzxq_tv_tq"
+                            android:layout_weight="8"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:text="中央商场"
+                            style="@style/text_30px_33"
+                            android:layout_marginLeft="5px"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:layout_width="10px"
+                            android:layout_height="match_parent"
+                            />
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="#E6EBEF" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E6EBEF" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="生产情况记录"
+                android:paddingLeft="10px"
+                android:gravity="center_vertical"
+                style="@style/text_30px_33"
+                android:textSize="36px"
+                />
+            <com.a21zhewang.constructionapp.customview.MyListView
+                android:layout_marginTop="-20px"
+                android:id="@+id/sgrzxq_nrms_MyListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.a21zhewang.constructionapp.customview.MyListView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="质量技术安全工作记录"
+                android:paddingLeft="10px"
+                android:gravity="center_vertical"
+                style="@style/text_30px_33"
+                android:textSize="36px"
+                />
+            <TextView
+                android:id="@+id/activity_sgrzxq_tv_gzjl"
+                android:padding="5px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/y200"
+                style="@style/text_30px_33"
+                android:background="@drawable/gtxt_jsll_item_shape"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:text="备注"
+                android:paddingLeft="10px"
+                android:gravity="center_vertical"
+                style="@style/text_30px_33"
+                android:textSize="36px"
+                />
+
+            <TextView
+                android:padding="5px"
+                android:id="@+id/activity_sgrzxq_tv_bz"
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:background="@drawable/gtxt_jsll_item_shape"
+                style="@style/text_30px_33"
+
+               />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auto_linear"
+    android:orientation="vertical"
+    android:background="@drawable/corners_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:padding="10dp"
+    android:id="@+id/linear1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/check_item_name1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="sdsdsafdsfdfdfg"
+        android:gravity="center_vertical"
+        android:textColor="@color/jet"
+        android:textSize="16sp" />
+
+    <EditText
+        android:hint="请输入"
+        android:background="@drawable/useredit_edittext_bg"
+        android:id="@+id/ed_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#8B8B8B"
+        android:textSize="16sp"
+         />
+
+</LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/linear2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/check_item_name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="sdsdsafdsfdfdfg"
+            android:gravity="center_vertical"
+            android:textColor="@color/jet"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_yes"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_left_bg"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="是"
+                android:textColor="@drawable/blue_select_text_bg2"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_right_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="否"
+                android:checked="false"
+                android:textColor="@drawable/blue_select_text_bg2"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

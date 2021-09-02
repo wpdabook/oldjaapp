@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\androidAPP\wms\poplib\src\main\assets"/><source path="G:\androidAPP\wms\poplib\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="G:\androidAPP\wms\poplib\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏背景色-->
+    <color name="tilebar_color">#0084cf</color>
+    <color name="tilebar_color2">#00b0cd</color>
+    <color name="table_line">#efeff4</color>
+    <color name="table_icon">#bababa</color>
+
+    <!--页面背景色-->
+    <color name="bg_color">#EFF8FF</color>
+    <color name="tab_color">#e1e5e7</color>
+    <color name="white">#ffffff</color>
+    <color name="tm">#bd000000</color>
+    <color name="rb_color">#E1DFDA</color>
+    <color name="color_272727">#272727</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_9e9e9e">#9e9e9e</color>
+    <color name="color_F0F4F6">#F0F4F6</color>
+    <color name="color_blue">#EFF8FF</color>
+    <color name="color_gray">#848484</color>
+    <color name="color_red">#f05f4c</color>
+    <color name="color_black">#f0f0f0</color>
+    <color name="color_blue_item">#f0f4f6</color>
+    <color name="color_blue_title">#9cb6f2</color>
+    <color name="color_blue_1">#E6EBEF</color>
+    <color name="list_item_selected2">#ffab91</color>
+    <color name="order_gray">#7C7C7C</color>
+    <color name="prograss_blue">#1096bb</color>
+    <color name="half_transparency">#Af000000</color>
+    <color name="color_theme">#03a9f4</color>
+    <color name="color_circle_blue">#4fc3f7</color>
+    <color name="foot_color">#AAAAAA</color>
+    <color name="footer_line">#ffd6d6d6</color>
+    <color name="title_gray_color">#e1e5e7</color>
+    <color name="background">#F5F5F5</color>
+    <color name="blackFont">#333333</color>
+    <color name="divider_line">#F5F5F5</color>
+    <color name="list_item_selected">#11000000</color>
+    <!--#D6D6D6 100%-->
+    <color name="color_D6D6D6">#D6D6D6</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_848484">#848484</color>
+    <color name="color_wjc">#F39E34</color>
+    <color name="color_yyh">#F56047</color>
+    <color name="color_qq">#25C992 </color>
+    <color name="color_green_chart">#33AC95</color>
+    <color name="color_0086d1">#0086d1</color>
+    <color name="color_062F6D">#062F6D </color>
+    <color name="color_4184df">#4184df </color>
+    <color name="color_035e91">#035e91 </color>
+    <color name="color_727272">#727272</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="input_hint1">#3251a4</color>
+    <color name="input_hint2">#323844</color>
+    <color name="input_hint3">#193e96</color>
+    <color name="homeline">#f2f2f2</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="popupwindow_background">#E0F0F0F0</color>
+    <color name="color_yahei">#50555D</color>
+    <color name="color_chat_blue">#677ce9</color>
+    <color name="color_water_sign">#ff8c00</color>
+    <!--login2-->
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="numberpicker_line">#00A0E9</color>
+    <color name="numberpicker_text">#00A0E9</color>
+    <color name="year">#00A0E9</color>
+    <color name="button_background">#00A0E9</color>
+    <color name="button_text">#FFFFFF</color>
+    <!--pie -->
+    <color name="pie_blue">#33b5e5</color>
+    <color name="pie_zi">#aa66cc</color>
+    <color name="pie_green">#99cc00</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="color_green_press">#0A9D7E</color>
+    <color name="update_default_theme_color">#FFE94339</color>
+    <color name="update_close_line_color">#D8D8D8</color>
+</resources>

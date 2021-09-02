@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/auto_linear"
+    android:background="@drawable/corners_gray_bg" >
+
+       <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/check_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sdsdsafdsfdfdfg"
+            android:gravity="center_vertical"
+            android:textColor="@color/jet"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:src="@drawable/ic_add"
+            android:id="@+id/check_item_ick"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#8B8B8B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/tab_color"
+        android:layout_height="0.5dp"
+        />
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/problem_layout"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/check_item_problem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_848484"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:padding="5dp"
+                android:id="@+id/radiogroup"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/rb_train"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/risk_rb1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="25dp"
+                    android:background="@drawable/gray_select_left_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="无此项"
+                    android:textColor="@drawable/gray_select_text_bg"
+                    android:textSize="12sp" />
+
+
+                <RadioButton
+                    android:id="@+id/risk_rb2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="25dp"
+                    android:background="@drawable/gray_select_middle_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="符合"
+                    android:textColor="@drawable/gray_select_text_bg"
+                    android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/risk_rb3"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="25dp"
+                    android:background="@drawable/gray_select_right_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="不符合"
+                    android:textColor="@drawable/gray_select_text_bg"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/color_ededed"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px" />
+    <LinearLayout
+        android:id="@+id/error_item_layout"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        >
+        <TextView
+            android:id="@+id/need_dispose_question"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="待处理问题"
+            android:textColor="@color/color_062F6D"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/need_dispose_question_look"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textColor="@color/color_4184df"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

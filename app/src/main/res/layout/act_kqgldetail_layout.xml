@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_index_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:backlin="true"
+            app:titletext="考勤管理" />
+
+    </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="人员考勤信息"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/look_sgrz_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@drawable/look_sgrz_text_color"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rank_search_lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="30dp"
+                android:background="@color/color_blue_1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="序号"
+                android:textColor="@color/color_666666"
+                android:textSize="14.5sp" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/color_blue_1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="考勤人"
+                android:textColor="@color/color_666666"
+                android:textSize="14.5sp" />
+           <View
+                android:layout_width="1dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/rb_sg_unit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/color_blue_1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="考勤天数"
+                android:textColor="@color/color_666666"
+                android:textSize="14.5sp" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/rb_jl_unit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/color_blue_1"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="考勤率"
+                android:textColor="@color/color_666666"
+                android:textSize="14.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.a21zhewang.constructionapp.customview.MyListView
+        android:visibility="visible"
+        android:id="@+id/kqgldetail_list"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_blue_1"
+        android:childDivider="#00000000"
+        android:groupIndicator="@null"
+        android:layout_height="wrap_content">
+    </com.a21zhewang.constructionapp.customview.MyListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="最近打卡人员"
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/look_sgrz_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@drawable/look_sgrz_text_color"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff" >
+
+        <com.a21zhewang.constructionapp.customview.HorizontalListView
+            android:id="@+id/horizontal_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

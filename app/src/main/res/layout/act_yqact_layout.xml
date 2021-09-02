@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_baselistview_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+        <RelativeLayout
+            android:id="@+id/activity_baselistview_RelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:clickable="true"
+            android:paddingRight="20px"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="发起"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.a21zhewang.constructionapp.customview.SearchView
+            android:id="@+id/SearchView_top"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_margin="10px" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/yiqing_search"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="排序"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/yq_rg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/yq_rb1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:background="@drawable/select_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="正向排序"
+                android:checked="true"
+                android:textColor="@drawable/select_text_bg"
+                android:textSize="11sp" />
+
+
+            <RadioButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/yq_rb2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:background="@drawable/select_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="逆向排序"
+                android:textColor="@drawable/select_text_bg"
+                android:textSize="11sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.a21zhewang.constructionapp.customview.XListView
+        android:id="@+id/yiqing_xlistview"
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/tab_color"
+        android:dividerHeight="0.2dp" >
+    </com.a21zhewang.constructionapp.customview.XListView>
+        <LinearLayout
+            android:id="@+id/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="暂无数据"
+                android:textColor="@color/color_666666"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

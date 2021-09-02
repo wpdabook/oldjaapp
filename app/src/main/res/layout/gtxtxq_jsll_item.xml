@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gtxt_jsll_item_shape">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送者:"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:layout_weight="1"
+                android:padding="5px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:padding="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送时间:"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:padding="5px"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:text="2017-12-35"
+                style="@style/text_25px_33"/>
+        </LinearLayout>
+        <TextView
+            android:layout_margin="5px"
+            android:padding="5px"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:text="关于xxxx项目的生产协调"
+            style="@style/text_25px_33"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/tab_color"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接送者:"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:layout_weight="1"
+                android:padding="5px"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:padding="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认时间:"
+                style="@style/text_25px_33"/>
+            <TextView
+                android:padding="5px"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:text="2017-12-35"
+                style="@style/text_25px_33"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

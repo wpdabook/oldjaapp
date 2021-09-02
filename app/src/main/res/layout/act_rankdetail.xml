@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tab_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/top_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+            <com.a21zhewang.constructionapp.customview.MyTitleBar
+                android:id="@+id/activity_baselistview_MyTitleBar"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+            <RelativeLayout
+                android:id="@+id/activity_baselistview_RelativeLayout"
+                android:layout_alignParentRight="true"
+                android:layout_width="120px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:clickable="true"
+                android:paddingRight="20px"
+                android:visibility="invisible">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:textColor="@color/white"
+                    android:text="发起"/>
+            </RelativeLayout>
+        </RelativeLayout>
+       <!--<include-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--layout="@layout/head" />-->
+    <ScrollView
+        style="@style/scrollstyle"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="2dp" >
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/foot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/act_rankdetail_item1" />
+
+        </LinearLayout>
+        <TextView
+            android:background="@color/table_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/foot"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                layout="@layout/act_rankdetail_item2" />
+        </LinearLayout>
+        <View
+            android:background="@color/table_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+        <!--风险隐患-->
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/foot"
+                layout="@layout/act_rankdetail_item3_0"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+        <View
+            android:background="@color/table_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/foot"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                layout="@layout/act_rankdetail_item4" />
+        </LinearLayout>
+        <View
+            android:background="@color/table_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/foot"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                layout="@layout/act_rankdetail_item6" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+     </android.support.v7.widget.CardView>
+    </ScrollView>
+    </LinearLayout>

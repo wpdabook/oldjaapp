@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/rank_search_lin1"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="日期情况"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/rb_train"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_top_five_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/select_left_bg"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="人员数量"
+                    android:checked="true"
+                    android:textColor="@drawable/blue_select_text_bg"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_last_five_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:background="@drawable/select_right_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="风险情况"
+                    android:textColor="@drawable/blue_select_text_bg"
+                    android:textSize="11sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </lecho.lib.hellocharts.view.LineChartView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

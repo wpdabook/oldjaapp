@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.SelectProjectActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/activity_select_project_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checklist_level0_shape"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/backupico"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@color/color_272727"
+        android:textSize="18sp"
+
+        android:elevation="1dp"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/activity_select_project_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

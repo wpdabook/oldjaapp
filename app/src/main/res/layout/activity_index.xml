@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.IndexActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_index_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:backlin="false"
+            app:titletext="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/activity_index_img_sys"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="true"
+            android:src="@mipmap/saoyisao"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/activity_index_img_sz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:src="@mipmap/personcenter" />
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/index_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<LinearLayout-->
+
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#EFF8FF"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="220px"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:visibility="gone"-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_zljd"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--app:imgsrc="@mipmap/zljdico"-->
+                            <!--app:tvname="质量监督" />-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_gtxt"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:visibility="visible"-->
+                            <!--app:imgsrc="@mipmap/gtxtico"-->
+                            <!--app:tvname="生产协调" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="20px"-->
+                        <!--android:layout_marginRight="20px"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_aqsc"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--app:imgsrc="@mipmap/aqscico"-->
+                            <!--app:tvname="安全生产" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_wmsg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--app:imgsrc="@mipmap/wmsgico"-->
+                            <!--app:tvname="文明施工" />-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="220px"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_tzgg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+
+                            <!--app:imgsrc="@mipmap/tzggico"-->
+                            <!--app:tvname="通知公告" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="20px"-->
+                        <!--android:layout_marginRight="20px"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_xmxx"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--app:imgsrc="@mipmap/xmxxico"-->
+                            <!--app:tvname="项目消息" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_sgtx"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:visibility="gone"-->
+                            <!--app:imgsrc="@mipmap/sgtxico"-->
+                            <!--app:tvname="施工提醒" />-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_zxjc"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+
+                            <!--app:imgsrc="@mipmap/zxjcicon"-->
+                            <!--app:tvname="专项检查" />-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="220px"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:visibility="gone">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_sgrz"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:visibility="gone"-->
+                            <!--app:imgsrc="@mipmap/sgrzico"-->
+                            <!--app:tvname="施工日志" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="20px"-->
+                        <!--android:layout_marginRight="20px"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+                        <!--<com.a21zhewang.constructionapp.customview.MyIndexItem-->
+                            <!--android:id="@+id/activity_index_MyIndexItem_gxys"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:visibility="gone"-->
+                            <!--app:imgsrc="@mipmap/gxysico"-->
+                            <!--app:tvname="工序验收" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="220px"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:layout_marginRight="20px"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:visibility="gone"-->
+
+                    <!--&gt;-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape"-->
+                        <!--android:orientation="horizontal">-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="20px"-->
+                        <!--android:layout_marginRight="20px"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/index_lin_shape">-->
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

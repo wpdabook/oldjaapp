@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_aqsc_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+        <RelativeLayout
+            android:id="@+id/activity_aqsc_RelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:paddingRight="20px"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="发起"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="95px"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="4px"
+            android:paddingTop="4px">
+            <com.a21zhewang.constructionapp.customview.MySpinner
+                android:id="@+id/activity_aqsc_MySpinner_XTLX"
+                android:layout_marginLeft="20px"
+                android:layout_width="230px"
+                android:layout_height="78px"
+                />
+            <com.a21zhewang.constructionapp.customview.MySpinner
+                android:layout_marginLeft="20px"
+                android:id="@+id/activity_aqsc_MySpinner_CLQK"
+                android:layout_width="230px"
+                android:layout_height="78px"
+                />
+
+
+        </LinearLayout>
+        <com.angel.layout.SWPullRecyclerLayout
+            android:id="@+id/activity_aqsc_SWPullRecyclerLayout"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.angel.layout.SWPullRecyclerLayout>
+    </LinearLayout>
+
+</LinearLayout>

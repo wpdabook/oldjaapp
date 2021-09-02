@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.jdsb.ADDJDActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/MyTitleBar"
+        android:layout_width="match_parent"
+        app:titletext="计划填报"
+        app:righttext="保存"
+        app:rightvisiable="true"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:id="@+id/ll_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+ <LinearLayout
+     android:paddingLeft="@dimen/x20"
+     android:paddingRight="@dimen/x20"
+     android:paddingTop="@dimen/x22"
+     android:paddingBottom="@dimen/x20"
+     android:gravity="center_vertical"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/y84">
+
+     <TextView
+         android:textColor="@color/color_727272"
+         android:textSize="15sp"
+         android:text="单位："
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <TextView
+         android:id="@+id/tv_dw"
+         android:minWidth="@dimen/x150"
+         android:textSize="16sp"
+         android:textColor="@color/color_333333"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <TextView
+
+         android:layout_marginLeft="@dimen/x100"
+         android:textColor="@color/color_727272"
+         android:textSize="15sp"
+         android:text="人员："
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <TextView
+         android:id="@+id/tv_user"
+        android:minWidth="@dimen/x100"
+         android:textSize="16sp"
+         android:textColor="@color/color_333333"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+        <LinearLayout
+            android:background="@color/color_f7f7f7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:paddingTop="@dimen/x22"
+            android:paddingBottom="@dimen/x20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="选择项目："
+                android:textColor="@color/color_727272"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_pj"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20"
+                android:text="项目名称 "
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@color/color_ededed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2" />
+            <TextView
+                android:textSize="15sp"
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20"
+                android:text="总产值完成比： "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.ljw.customseekbar.CustomSeekBar
+                android:id="@+id/csb_zczwcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="15sp"
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20"
+                android:text="月度产值完成比： "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.ljw.customseekbar.CustomSeekBar
+                android:id="@+id/csb_ydczwcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_jdlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minHeight="@dimen/y442"
+            android:background="@color/color_f7f7f7"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/img_addjd"
+                android:background="@drawable/ic_addyuan"
+                android:layout_width="@dimen/x96"
+                android:layout_height="@dimen/x96" />
+            <TextView
+                android:textColor="#0086D1"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/y24"
+                android:text="选择工程阶段"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20"
+                android:text="滞后天数=实际的截止日期-计划截止日期 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

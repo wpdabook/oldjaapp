@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="checkitem">
+        <item>其他原因</item>
+        <item>施工类型没有此项</item>
+        <item>施工流程精简</item>
+        <item>描述不正确</item>
+        <item>没有参照</item>
+    </string-array>
+
+</resources>

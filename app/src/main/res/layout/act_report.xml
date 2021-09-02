@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+    <View
+        android:background="@color/table_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:background="@color/table_line"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.a21zhewang.constructionapp.customview.TabView
+            android:visibility="gone"
+            android:text="重点关注"
+            android:id="@+id/tab_view1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TabView
+            android:visibility="gone"
+            android:text="项目情况"
+            android:id="@+id/tab_view2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TabView
+            android:visibility="gone"
+            android:text="检查情况"
+            android:id="@+id/tab_view3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.a21zhewang.constructionapp.customview.TabView
+            android:visibility="gone"
+            android:text="排名情况"
+            android:id="@+id/tab_view4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

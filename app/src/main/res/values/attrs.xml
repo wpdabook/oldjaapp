@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTitleBar">
+        <attr name="titletext" format="string"></attr>
+        <attr name="righttext" format="string"></attr>
+        <attr name="rightvisiable" format="boolean"></attr>
+        <attr name="backlin" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="MyIndexItem">
+        <attr name="imgsrc" format="reference"></attr>
+        <!--<attr name="tvnumber" format="string"></attr>-->
+        <attr name="tvname" format="string"></attr>
+        <!--<attr name="tcjd" format="string"></attr>-->
+    </declare-styleable>
+
+    <declare-styleable name="MySpinner">
+        <attr name="textsize" format="dimension"></attr>
+        <attr name="text" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="MytimeSpinner">
+        <attr name="timetextsize" format="dimension"></attr>
+        <attr name="timetext" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CanyurenView">
+        <attr name="str" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TimeTextView">
+        <attr name="dateFormat" format="string"/>
+        <attr name="showTime" format="boolean"/>
+        <attr name="startTime" format="string"/>
+        <attr name="isTimeslot" format="boolean"/>
+    </declare-styleable>
+    <!--首页滚动广告-->
+    <declare-styleable name="RollViewPager">
+    <attr name="rollviewpager_hint_mode">
+        <enum name="point" value="0" />
+        <enum name="number" value="1" />
+    </attr>
+    <attr name="rollviewpager_hint_gravity">
+        <enum name="left" value="0" />
+        <enum name="center" value="1" />
+        <enum name="right" value="2" />
+    </attr>
+    <attr name="rollviewpager_hint_paddingRight" format="dimension"/>
+    <attr name="rollviewpager_hint_paddingLeft" format="dimension"/>
+    <attr name="rollviewpager_hint_paddingTop" format="dimension"/>
+    <attr name="rollviewpager_hint_paddingBottom" format="dimension"/>
+
+    <attr name="rollviewpager_play_delay" format="integer" />
+    <attr name="rollviewpager_hint_color" format="color" />
+    <attr name="rollviewpager_hint_alpha" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBarWidthNumber">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleTextImageView">
+        <attr name="citv_border_width" format="dimension" />
+        <attr name="citv_border_color" format="color" />
+        <attr name="citv_border_overlay" format="boolean" />
+        <attr name="citv_fill_color" format="color" />
+        <attr name="citv_text_text" format="string"/>
+        <attr name="citv_text_color" format="color"/>
+        <attr name="citv_text_size" format="dimension"/>
+        <attr name="citv_text_padding" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircularProgressView">
+        <attr name="backWidth" format="dimension" />    <!--背景圆环宽度-->
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="backColor" format="color" />        <!--背景圆环颜色-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progStartColor" format="color" />   <!--进度圆环开始颜色-->
+        <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
+        <attr name="progress" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="XNumberProgressBar">
+        <attr name="xnpb_current" format="integer" />
+        <attr name="xnpb_max" format="integer" />
+
+        <attr name="xnpb_unreached_color" format="color" />
+        <attr name="xnpb_reached_color" format="color" />
+
+        <attr name="xnpb_reached_bar_height" format="dimension" />
+        <attr name="xnpb_unreached_bar_height" format="dimension" />
+
+        <attr name="xnpb_text_size" format="dimension" />
+        <attr name="xnpb_text_color" format="color" />
+
+        <attr name="xnpb_text_offset" format="dimension" />
+
+        <attr name="xnpb_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

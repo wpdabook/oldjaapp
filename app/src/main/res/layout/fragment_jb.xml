@@ -1,0 +1,434 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.a21zhewang.constructionapp.ui.xmxx.fragment.JbFragment">
+<ScrollView
+    style="@style/scrollstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15px">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="项目名称" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_xmmc"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="项目地址" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_xmdz"
+
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+                <ImageView
+                    android:id="@+id/maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/ic_maps_24dp" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="负责人" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_fzr"
+
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="电话" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_dh"
+
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="项目状态" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_xmzt"
+
+                    android:paddingTop="5px"
+                    android:paddingBottom="5px"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:minHeight="100px"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="开工日期" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_kgrr"
+
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="竣工日期" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_jgrr"
+
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF"/>
+
+                <TextView
+                    style="@style/text_30px_33"
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:background="#F0F4F6"
+                    android:gravity="center"
+                    android:text="项目情况" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+
+                <TextView
+                    android:id="@+id/fragment_jb_xmqk"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2px"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:minHeight="300px"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E6EBEF" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBEF" />
+
+    </LinearLayout>
+</ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/liner_saferank_second_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="安全风险（Ⅰ、Ⅱ、Ⅲ级）"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_arrow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lin_onelevel1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <com.a21zhewang.constructionapp.customview.CircularProgressView
+                    android:id="@+id/circle_one"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:padding="3dp"
+                    app:backColor="@color/color_circle_blue"
+                    app:backWidth="2dp"
+                    app:progColor="@color/color_theme"
+                    app:progWidth="5dp"
+                    app:progress="0" />
+               <LinearLayout
+                   android:gravity="center"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                <TextView
+                    android:text="Ⅰ级风险："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                   <TextView
+                       android:text=""
+                       android:id="@+id/tv_leve1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_onelevel2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <com.a21zhewang.constructionapp.customview.CircularProgressView
+                    android:id="@+id/circle_two"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:padding="3dp"
+                    app:backColor="@color/color_circle_blue"
+                    app:backWidth="2dp"
+                    app:progColor="@color/color_theme"
+                    app:progWidth="5dp"
+                    app:progress="0" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:text="Ⅱ级风险："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:id="@+id/tv_leve2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/lin_onelevel3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <com.a21zhewang.constructionapp.customview.CircularProgressView
+                    android:id="@+id/circle_three"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:padding="3dp"
+                    app:backColor="@color/color_circle_blue"
+                    app:backWidth="2dp"
+                    app:progColor="@color/color_theme"
+                    app:progWidth="5dp"
+                    app:progress="0" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:text="Ⅲ级风险："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:id="@+id/tv_leve3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+               </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

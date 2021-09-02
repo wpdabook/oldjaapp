@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_baselistview_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:titletext="选择督办单位"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+    </RelativeLayout>
+    <ExpandableListView
+        android:id="@+id/rwcheck_elistView"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_height="0dp" >
+    </ExpandableListView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="106dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="2dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:minHeight="64dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/check_item_content"
+            android:textSize="18sp"
+            android:textColor="@color/color_848484"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/check_item_checkstate"
+            android:paddingLeft="5dp"
+            android:background="@drawable/checkitem_shape"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/pushico"
+            android:layout_width="wrap_content"
+            android:minWidth="46dp"
+            android:layout_height="20dp"
+            android:textSize="9sp"
+            android:textColor="@color/white"/>
+        
+    </LinearLayout>
+<TextView
+    android:background="@color/color_ededed"
+    android:layout_width="match_parent"
+    android:layout_height="1px" />
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        >
+        <TextView
+            android:id="@+id/need_dispose_question"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="待处理问题"
+            android:textColor="@color/color_062F6D"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/need_dispose_question_look"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textColor="@color/color_4184df"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/check_item_addNewCheck"
+android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#8B8B8B"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    
+
+
+</com.zhy.autolayout.AutoLinearLayout>

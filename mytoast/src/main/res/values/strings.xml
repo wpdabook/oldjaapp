@@ -1,0 +1,7 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">自定义Toast</string>
+    <string name="label">我的自定义Toast，\n特点在于使用简单，\n并且自带两种样式：\n\t1)普通的文字样式；\n\t2)带图标样式；\n\t\t其中图标有√和×两种图标。\n\n我的Toast还有另外一个特点就是：\n系统自带Toast采用的是队列的方式，\n等当前Toast消失后，\n下一个Toast才能显示出来。\n而我的Toast，\n有新Toast的话，\n会把当前Toast顶掉，\n直接显示最新的Toast。</string>
+</resources>

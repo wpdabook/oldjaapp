@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/body"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:gravity="center"
+            android:id="@+id/activity_baselistview_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:titletext="新增重点督办"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:id="@+id/activity_baselistview_RelativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:paddingRight="20px"
+            android:visibility="visible">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28px"
+                android:textColor="@color/white"
+                android:text="提交"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/li_tasktype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="15dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="督办类型"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_tasktype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="请选择任务类型"
+                    android:padding="5dp"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/li_select_object"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="16dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_call"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/notice_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:hint="请选择通知对象"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+
+            <LinearLayout
+                android:id="@+id/li_select_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="接收项目"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_receive_project"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="请选择接收项目"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/icon_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:padding="12dip"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:textSize="15sp"
+                    android:textColor="@color/color_666666"
+                    android:id="@+id/edit_title"
+                    android:minHeight="40dp"
+                    android:hint="请输入重点督办标题（建议20字以内）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:id="@+id/li_select_check_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="督办单位"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_check_company"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="请选择督办单位"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:id="@+id/li_select_check_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:orientation="horizontal"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="督办人"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_check_user"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="请选择督办人"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/li_select_project_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:orientation="horizontal"
+                android:padding="12dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="检查类别"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_risk_project_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="请选择检查类别"
+                    android:paddingLeft="5dip"
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:src="@mipmap/iconto"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:focusable="true"
+                android:padding="12dip"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:textSize="15sp"
+                    android:textColor="@color/color_666666"
+                    android:id="@+id/edit_content"
+                    android:minHeight="40dp"
+                    android:focusable="true"
+                    android:maxLength="300"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入您要描述的文字信息（仅限300以内）"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:padding="10dp"
+                    android:id="@+id/edit_des"
+                    android:background="@drawable/bg_grid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:hint="请在这里输入内容(限300字)..."
+                    android:minHeight="100dp"
+                    android:maxLength="300"
+                    android:textColor="@color/monsoon"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/homeline" />
+            <LinearLayout
+                android:id="@+id/li_select_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="12dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_update_app"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="上传图片"
+                    android:textColor="@color/color_theme"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/addimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/addimgico"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/tab_color"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:padding="16dip"
+                android:visibility="visible">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/noticefile_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

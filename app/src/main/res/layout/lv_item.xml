@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myChart="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text=""
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="344"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+      <LinearLayout
+          android:visibility="gone"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:gravity="center"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_marginLeft="20dp"
+              android:text=""
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+      </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:id="@+id/action_linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <TextView
+            android:text="888"
+            android:textSize="8sp"
+            android:id="@+id/tv_number_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.a21zhewang.constructionapp.customview.HorzinonlChartView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            myChart:leftColor="@color/color_theme"
+            android:id="@+id/hor2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:id="@+id/send_linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <TextView
+            android:text="6666"
+            android:textSize="8sp"
+            android:id="@+id/tv_number_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.a21zhewang.constructionapp.customview.HorzinonlChartView
+            android:layout_marginTop="3dp"
+            myChart:leftColor="@color/color_green_chart"
+            android:id="@+id/hor1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

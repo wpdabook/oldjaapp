@@ -1,0 +1,18 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:ellipsize="end"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:textColor="@color/color_666666"
+    android:background="@drawable/shape_spinner_bg"
+    android:drawableRight="@drawable/ic_touch_app_black_24dp"
+    />
+    <!--右侧加图标-->
+    <!--android:drawableRight="@drawable/ic_expand_more_black_24dp"-->
+
+    

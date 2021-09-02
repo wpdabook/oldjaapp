@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custompop/custompop.iml" filepath="$PROJECT_DIR$/custompop/custompop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customseekbar/customseekbar.iml" filepath="$PROJECT_DIR$/customseekbar/customseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droplist/droplist.iml" filepath="$PROJECT_DIR$/droplist/droplist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/epclibrary/epclibrary.iml" filepath="$PROJECT_DIR$/epclibrary/epclibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graffiti/graffiti.iml" filepath="$PROJECT_DIR$/graffiti/graffiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lodindshowlibrary/lodindshowlibrary.iml" filepath="$PROJECT_DIR$/lodindshowlibrary/lodindshowlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mytoast/mytoast.iml" filepath="$PROJECT_DIR$/mytoast/mytoast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newapp.iml" filepath="$PROJECT_DIR$/newapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photolibrary/photolibrary.iml" filepath="$PROJECT_DIR$/photolibrary/photolibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerlayout/recyclerlayout.iml" filepath="$PROJECT_DIR$/recyclerlayout/recyclerlayout.iml" />
+    </modules>
+  </component>
+</project>

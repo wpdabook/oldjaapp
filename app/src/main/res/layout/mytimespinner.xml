@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/mytimespinner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/myspinner_shape"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mytimespinner_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:text="文字"
+            android:layout_toLeftOf="@+id/myspinnner_img"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

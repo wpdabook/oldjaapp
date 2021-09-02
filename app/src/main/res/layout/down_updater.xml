@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/update_bg_app_top"
+            />
+
+       <LinearLayout
+           android:background="@android:color/white"
+           android:orientation="vertical"
+           android:padding="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/tv_title"
+             android:text="biao"
+             android:textStyle="bold"
+             android:textSize="16dp"
+             android:layout_marginTop="10dp"
+             android:textColor="@android:color/black"
+             android:layout_gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_update_number"
+               android:text="biao2"
+               android:textSize="12dp"
+               android:layout_marginTop="10dp"
+               android:textColor="#666666"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_update_time"
+               android:text="biao2"
+               android:textSize="12dp"
+               android:layout_marginTop="5dp"
+               android:textColor="#666666"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_content"
+               android:text="biao2"
+               android:textSize="12dp"
+               android:layout_marginTop="5dp"
+               android:textColor="#666666"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_update"
+               android:text="点击更新"
+               android:layout_marginTop="30dp"
+               android:textColor="@android:color/white"
+               android:gravity="center"
+               android:background="@drawable/shape_dialog_update_btn"
+               android:layout_width="match_parent"
+               android:layout_height="35dp" />
+           <com.a21zhewang.constructionapp.customview.NumberProgressBar
+               android:id="@+id/npb_progress"
+               style="@style/XUpdate_ProgressBar_Red"
+               android:layout_marginTop="30dp"
+               android:paddingBottom="10dp"
+               android:visibility="gone" />
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/update_close_line_color" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/xupdate_icon_app_close" />
+
+    </LinearLayout>
+
+</LinearLayout>

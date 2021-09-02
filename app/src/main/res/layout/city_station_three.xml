@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/liner_saferank_second_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--  <ImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/ic_zd_icon_24dp"
+                  />-->
+            <View
+                android:layout_width="3dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/pie_blue"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/focus_info_date_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:textSize="14sp"
+                android:text="基础数据"
+                android:textStyle="bold" />
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_arrow"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:id="@+id/tag_one"
+                    android:textColor="@color/pie_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="整改中隐患"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_666666"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diffvalue1"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:id="@+id/tag_two"
+                    android:textColor="@color/color_wjc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="累计隐患数"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_666666"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diffvalue2"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:id="@+id/tag_three"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="异常人数"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_666666"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diffvalue3"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+       <!--2-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:id="@+id/tag_four"
+                    android:textColor="@color/color_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="机械总数"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_666666"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diffvalue4"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:id="@+id/tag_five"
+                    android:textColor="@color/pie_zi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="危大总数"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_666666"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/diffvalue5"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="invisible"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="异常人数"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="较昨日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

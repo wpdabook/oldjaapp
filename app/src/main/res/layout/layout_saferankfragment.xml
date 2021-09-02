@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_F0F4F6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/rank_search_lin1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="得分"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rb_train"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/risk_rb1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/red_select_left_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:text="一级风险"-->
+                <!--android:checked="true"-->
+                <!--android:textColor="@drawable/select_text_bg"-->
+                <!--android:textSize="12sp" />-->
+
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/risk_rb2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/red_select_middle_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:text="二级风险"-->
+                <!--android:textColor="@drawable/select_text_bg"-->
+                <!--android:textSize="12sp" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/risk_rb3"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/red_select_middle_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:text="三级风险"-->
+                <!--android:textColor="@drawable/select_text_bg"-->
+                <!--android:textSize="12sp" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/risk_rb4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/red_select_middle_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:text="四级风险"-->
+                <!--android:textColor="@drawable/select_text_bg"-->
+                <!--android:textSize="12sp" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/risk_rb5"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/red_select_right_bg"-->
+                <!--android:button="@null"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:text="五级风险"-->
+                <!--android:textColor="@drawable/select_text_bg"-->
+                <!--android:textSize="12sp" />-->
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.a21zhewang.constructionapp.customview.XListView
+        android:id="@+id/rank_xlistview"
+        style="@style/scrollstyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="6dp" >
+    </com.a21zhewang.constructionapp.customview.XListView>
+
+
+    <LinearLayout
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="暂无数据"
+            android:textColor="@color/color_666666"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addzxjc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a21zhewang.constructionapp.ui.zxjc.AddzxjcActivity">
+
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titletext="检查概要" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/gtxt_jsll_item_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_30px_66"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="90px"
+                    android:padding="10px"
+
+                    android:text="检查部门" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/activity_addzxjc_tv_jcbm"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_30px_66"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="90px"
+                    android:padding="10px"
+                    android:text="检查人" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/activity_addzxjc_tv_jcr"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_30px_66"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="90px"
+                    android:padding="10px"
+                    android:text="检查时间" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/activity_addzxjc_tv_jcsj"
+                    style="@style/text_30px_33"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="10px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/gtxt_jsll_item_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_30px_66"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="90px"
+                    android:padding="10px"
+                    android:text="选择工程名" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/activity_addzxjc_TextView_pj"
+                    android:layout_width="400px"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5px"
+                    android:background="@drawable/myspinner_shape"
+                    android:gravity="center_vertical"
+                    android:text="选择工程" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tab_color" />
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_30px_66"
+                    android:layout_width="250px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="90px"
+                    android:padding="10px"
+                    android:text="配置检查表" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/tab_color" />
+
+                <TextView
+                    android:id="@+id/activity_addzxjc_tv_pz"
+                    style="@style/text_30px_66"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:padding="10px"
+                    android:text="配置>>"
+                    android:textColor="@color/color_0086d1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/activity_addzxjc_tv_StartCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bluebtn_bg"
+                android:gravity="center"
+                android:text="开始检查"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

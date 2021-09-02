@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_tzggxq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFF8FF"
+    tools:context="com.a21zhewang.constructionapp.ui.wggl.WgxqActivity">
+    <com.a21zhewang.constructionapp.customview.MyTitleBar
+        android:id="@+id/activity_tzggxq_MyTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <ScrollView
+        style="@style/scrollstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20px">
+
+                <LinearLayout
+                    android:id="@+id/activity_basexq_headerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#E6EBEF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                style="@style/text_30px_33"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+
+                                android:background="#F0F4F6"
+                                android:gravity="center"
+                                android:text="信息标题" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                android:id="@+id/activity_tzggxq_tv_bt"
+                                style="@style/text_30px_33"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2px"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/text_30px_33"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+
+                                android:background="#F0F4F6"
+                                android:gravity="center"
+                                android:text="问题部位" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                android:id="@+id/activity_basexq_tv_wtbw"
+                                style="@style/text_30px_33"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2px"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#E6EBEF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                style="@style/text_30px_33"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+                                android:background="#F0F4F6"
+                                android:gravity="center"
+                                android:text="推送人" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                android:id="@+id/activity_tzggxq_tv_tsr"
+
+                                style="@style/text_30px_33"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2px"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/activity_basexq_tv_lctv"
+                                style="@style/text_30px_33"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+                                android:background="#F0F4F6"
+                                android:gravity="center"
+                                android:text="推送时间" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                android:id="@+id/activity_tzggxq_tv_time"
+
+                                style="@style/text_30px_33"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2px"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#E6EBEF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+                                style="@style/text_30px_33"
+                                android:layout_width="150px"
+                                android:layout_height="match_parent"
+                                android:background="#F0F4F6"
+                                android:gravity="center"
+                                android:text="问题类型" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+
+                            <TextView
+
+                                android:paddingTop="5px"
+                                android:paddingBottom="5px"
+                                android:id="@+id/activity_tzggxq_tv_jsdw"
+
+                                style="@style/text_30px_33"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2px"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:minHeight="100px"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#E6EBEF" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#E6EBEF" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="100px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10px"
+                        android:text="内容描述"
+                        android:textColor="#333333"
+                        android:textSize="36px" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_tzggxq_tv_nrms"
+                    style="@style/text_30px_33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/x150"
+                    android:background="@drawable/gtxt_jsll_item_shape"
+                    android:gravity="left|top"
+                    android:padding="3px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/activity_tzggxq_RecyclerView_imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="145px"
+                    android:layout_marginTop="20px">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10px"
+                    android:text="查阅纪录"
+                    android:textColor="#666666"
+                    android:textSize="36px" />
+
+                <com.a21zhewang.constructionapp.customview.MyListView
+                    android:id="@+id/activity_tzggxq_MyListView_cyjls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.a21zhewang.constructionapp.customview.MyListView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

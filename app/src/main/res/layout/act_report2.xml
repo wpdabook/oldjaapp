@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top_title_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+            <com.a21zhewang.constructionapp.customview.MyTitleBar
+                android:id="@+id/activity_baselistview_MyTitleBar"
+                android:layout_width="match_parent"
+                app:titletext="汇总统计"
+                android:layout_height="100px">
+            </com.a21zhewang.constructionapp.customview.MyTitleBar>
+            <LinearLayout
+                android:id="@+id/activity_baselistview_RelativeLayout"
+                android:layout_alignParentRight="true"
+                android:layout_width="120px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:clickable="true"
+                android:paddingRight="20px"
+                android:visibility="invisible">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:textColor="@color/white"
+                    android:text="发起"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="暂无权限"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/index_lin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </android.support.v4.view.ViewPager>
+        <View
+            android:background="@color/table_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:background="@color/table_line"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.a21zhewang.constructionapp.customview.TabView
+                android:visibility="gone"
+                android:text="重点关注"
+                android:id="@+id/tab_view1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.a21zhewang.constructionapp.customview.TabView
+                android:visibility="gone"
+                android:text="项目情况"
+                android:id="@+id/tab_view2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.a21zhewang.constructionapp.customview.TabView
+                android:visibility="gone"
+                android:text="检查情况"
+                android:id="@+id/tab_view3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.a21zhewang.constructionapp.customview.TabView
+                android:visibility="gone"
+                android:text="排名情况"
+                android:id="@+id/tab_view4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <com.a21zhewang.constructionapp.customview.TabView
+                android:visibility="gone"
+                android:text="疫情复工"
+                android:id="@+id/tab_view5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

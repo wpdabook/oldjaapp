@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_index_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backlin="true"
+            app:righttext="搜索"
+            app:rightvisiable="true"
+            app:titletext="工程导航" />
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        />
+    <!--地图o-->
+    <com.amap.api.maps.MapView
+        android:layout_below="@+id/title"
+        android:id="@+id/location_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--回显位置信息的布局-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.85"
+        android:layout_margin="5dp"
+        android:background="@color/table_line"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/location_coordinate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:gravity="center|left"
+            android:textColor="#1A91B0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/location_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center|left|top"
+            android:paddingTop="10dp"
+            android:textColor="#F05554"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

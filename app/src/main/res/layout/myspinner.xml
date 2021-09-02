@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/myspinner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/myspinner_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/myspinner_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10px"
+            android:maxLines="1"
+            android:textSize="30px"
+            android:textColor="#333333"
+            android:gravity="center_vertical|left"
+            android:text=""
+
+            />
+        <TextView
+
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            />
+
+        <ImageView
+            android:id="@+id/myspinnner_img"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_xiala" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</LinearLayout>

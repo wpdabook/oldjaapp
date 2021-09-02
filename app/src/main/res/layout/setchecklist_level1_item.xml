@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minHeight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/setchecklist_level1_item_checkbox"
+            android:layout_width="wrap_content"
+           android:background="@drawable/allselect"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/setchecklist_level1_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_272727"
+            />
+        <TextView
+            android:padding="12px"
+            android:textSize="16sp"
+            android:id="@+id/setchecklist_level1_item_pz"
+            android:text="配置检查表"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4184DF"/>
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_zxjc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_F0F4F6"
+    tools:context="com.a21zhewang.constructionapp.ui.wdjc.WdjcActivity2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/activity_zxjc_MyTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            app:titletext="重点检查"
+            ></com.a21zhewang.constructionapp.customview.MyTitleBar>
+
+        <RelativeLayout
+            android:id="@+id/activity_zxjc_RelativeLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:clickable="true"
+            android:paddingRight="20px"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30px"
+                android:textColor="@color/white"
+                android:text="发起"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.a21zhewang.constructionapp.customview.SearchView
+        android:id="@+id/SearchView_top"
+        android:layout_margin="10px"
+        android:layout_width="match_parent"
+        android:layout_height="88px"/>
+
+    <!--排名情况-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.a21zhewang.constructionapp.customview.ViewPagerIndicator
+            android:id="@+id/indicator"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:item_count="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/table_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/table_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

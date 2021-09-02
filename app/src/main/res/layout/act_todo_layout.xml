@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+
+        <com.a21zhewang.constructionapp.customview.MyTitleBar
+            android:id="@+id/myTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backlin="true"
+            app:titletext="小助手" />
+
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        style="@style/scrollstyle"
+        android:id="@+id/todo_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
