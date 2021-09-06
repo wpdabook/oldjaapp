@@ -268,6 +268,8 @@ public class Act_ProceduralInspection extends BaseActivity {
             im_add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    BtnSave.setBackgroundResource(R.drawable.dialog_gray_btn_bg);
+                    BtnSave.setEnabled(false);
                     Intent i = new Intent(Act_ProceduralInspection.this, Act_AddTypeProcedural.class);
                     i.putExtra("position", position)
                             .putExtra("projectID", projectID)

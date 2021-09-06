@@ -106,9 +106,9 @@
             android:name="com.amap.api.v2.apikey"
             android:value="c57b21f0e0c1d8750de71b43ba23cc61"/>-->
         <!--青山建安-->
-       <!--  <meta-data
+         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="72d24d8637b0f88c31fc1df045a4bd5a"/>-->
+            android:value="72d24d8637b0f88c31fc1df045a4bd5a"/>
         <!--硚口建安-->
         <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -166,9 +166,9 @@
             android:name="com.amap.api.v2.apikey"
             android:value="b69f2d5adb562a4b900de3f0b57ab649"/>-->
         <!--武汉建安-->
-        <meta-data
+       <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="1a35b6b056326b396cdf8ab4ae3a51df"/>
+            android:value="1a35b6b056326b396cdf8ab4ae3a51df"/>-->
        <!-- 重庆建工-->
         <!-- <meta-data
              android:name="com.amap.api.v2.apikey"
