@@ -19,12 +19,14 @@ import com.a21zhewang.constructionapp.R;
 import com.a21zhewang.constructionapp.adapter.NamesSpinnerAdpater;
 import com.a21zhewang.constructionapp.base.BaseActivity;
 import com.a21zhewang.constructionapp.base.BaseAddSearchActivity;
+import com.a21zhewang.constructionapp.bean.ButtonBean;
 import com.a21zhewang.constructionapp.bean.FbBean;
 import com.a21zhewang.constructionapp.bean.ListBean;
 import com.a21zhewang.constructionapp.bean.ObjBean;
 import com.a21zhewang.constructionapp.bean.ProjectSynopsis;
 import com.a21zhewang.constructionapp.customview.MySpinner;
 import com.a21zhewang.constructionapp.customview.NoScrollViewPager;
+import com.a21zhewang.constructionapp.publicContent.PublicUtils;
 import com.a21zhewang.constructionapp.ui.xmxx.fragment.FbFragment;
 import com.a21zhewang.constructionapp.ui.xmxx.fragment.JbFragment;
 import com.a21zhewang.constructionapp.ui.xmxx.fragment.zongbaoFragment;
@@ -71,12 +73,21 @@ public class XmxxActivity extends BaseActivity {
     TextView title;
     private NamesSpinnerAdpater<ProjectSynopsis> adapter;
     private String projectID = "";
+    private boolean addMapsBtn = false;
     public String getProjectID() {
         return projectID;
     }
 
     public void setProjectID(String projectID) {
         this.projectID = projectID;
+    }
+
+    public boolean isAddMapsBtn() {
+        return addMapsBtn;
+    }
+
+    public void setAddMapsBtn(boolean addMapsBtn) {
+        this.addMapsBtn = addMapsBtn;
     }
     /**
      * setContentView之前调用
@@ -100,6 +111,14 @@ public class XmxxActivity extends BaseActivity {
     @Override
     public void initViews() {
         title.setText("项目信息");
+        List<ButtonBean> buttons = PublicUtils.userBean.getButtons();
+        if (buttons != null) {
+            for (ButtonBean btn : buttons) {
+                if (btn.getBtnID().equals("ProjectMsgAddBtn")) {
+                    setAddMapsBtn(true);
+                }
+            }
+        }
         rightlinlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

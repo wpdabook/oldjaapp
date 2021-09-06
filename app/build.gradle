@@ -33,8 +33,8 @@ android {
         // applicationId "com.a21zhewang.constructionapp"
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 7//内部版本 升级使用  整数累加
-        versionName "1.7.0"
+        versionCode 6//内部版本 升级使用  整数累加
+        versionName "1.5.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
@@ -113,8 +113,8 @@ android {
         saqz {
             applicationId "com.a21zhewang.constructionapp.saqz"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "saqz"]
-            versionCode 5
-            versionName "1.4"//
+            versionCode 6
+            versionName "1.5"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "247e62747ecbf4e8b3bff831", //JPush上注册的包名对应的appkey.
@@ -126,8 +126,8 @@ android {
         hyzj {
             applicationId "com.a21zhewang.constructionapp.hyzj"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hyzj"]
-            versionCode 11
-            versionName "2.7"//
+            versionCode 12
+            versionName "2.8"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "9c2a7d0803c77eb6f080e381", //JPush上注册的包名对应的appkey.
@@ -152,8 +152,8 @@ android {
         jx {
             applicationId "com.a21zhewang.constructionapp.jxja"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jxja"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "d740c498ce5db101217e8f1c", //JPush上注册的包名对应的appkey.
@@ -178,8 +178,8 @@ android {
         cd {
             applicationId "com.a21zhewang.constructionapp.cdja"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "cdja"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "ac3033f66f1252ac1758ea8c", //JPush上注册的包名对应的appkey.
@@ -191,8 +191,8 @@ android {
         dhgx {
             applicationId "com.a21zhewang.constructionapp.dhgx"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "dhgx"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "d0fbdec22334e5c6bad46bb7", //JPush上注册的包名对应的appkey.
@@ -204,8 +204,8 @@ android {
         dxh {
             applicationId "com.a21zhewang.constructionapp.dxh"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "dxh"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "f2e451faf70ea331fd1fd485", //JPush上注册的包名对应的appkey.
@@ -217,8 +217,8 @@ android {
         qk {
             applicationId "com.a21zhewang.constructionapp.qk"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "qk"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 6
+            versionName "1.5"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "a3a04be3d8a414d317c4e1b9", //JPush上注册的包名对应的appkey.
@@ -243,8 +243,8 @@ android {
         ja {
             applicationId "com.a21zhewang.constructionapp.ja"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "ja"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "f4fb0b9d78264ace5616c9ac", //JPush上注册的包名对应的appkey.
@@ -256,8 +256,8 @@ android {
         hs {
             applicationId "com.a21zhewang.constructionapp.hs"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hs"]
-            versionCode 5
-            versionName "1.4"//
+            versionCode 6
+            versionName "1.5"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "e32c287a3c2b225bfd5be898", //JPush上注册的包名对应的appkey.
@@ -269,8 +269,8 @@ android {
         hn {
             applicationId "com.a21zhewang.constructionapp.hn"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hn"]
-            versionCode 5
-            versionName "1.3"//
+            versionCode 6
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "a47ba625ffa317a96fbf1f77", //JPush上注册的包名对应的appkey.
@@ -282,8 +282,8 @@ android {
         hp{
             applicationId "com.a21zhewang.constructionapp.hp"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "hp"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "ec300bff8c692fe22cab9dd4", //JPush上注册的包名对应的appkey.
@@ -295,8 +295,8 @@ android {
         xz{
             applicationId "com.a21zhewang.constructionapp.xz"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xz"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "7610d7f15160521405bef807", //JPush上注册的包名对应的appkey.
@@ -308,8 +308,8 @@ android {
         jh{
             applicationId "com.a21zhewang.constructionapp.jh"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jh"]
-            versionCode 5
-            versionName "1.4"//
+            versionCode 6
+            versionName "1.5"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "c33032d2cde9176b3435783e", //JPush上注册的包名对应的appkey.
@@ -321,8 +321,8 @@ android {
         wc{
             applicationId "com.a21zhewang.constructionapp.wc"
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wc"]
-            versionCode 4
-            versionName "1.3"//
+            versionCode 5
+            versionName "1.4"//
             manifestPlaceholders = [
                     JPUSH_PKGNAME: applicationId,
                     JPUSH_APPKEY : "9229acc9fb28858eaa4ab290", //JPush上注册的包名对应的appkey.

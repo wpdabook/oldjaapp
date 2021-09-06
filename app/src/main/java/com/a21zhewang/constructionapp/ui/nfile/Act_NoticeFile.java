@@ -63,22 +63,22 @@ public class Act_NoticeFile extends BaseActivity implements OnTouchUpListener {
 
     @Override
     public void initViews() {
-//        List<ButtonBean> buttons = PublicUtils.userBean.getButtons();
-//        if (buttons != null) {
-//            for (ButtonBean btn : buttons) {
-//                if (btn.getBtnID().equals("NotificationDocumentAddBtn")) {
-//                    activityTzggImageViewAddimg.setVisibility(View.VISIBLE);
-//                    activityTzggImageViewAddimg.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            onClickIndex=0;
-//                            Intent intent = new Intent(Act_NoticeFile.this, Act_AddNoticeFile.class);
-//                            startActivity(intent);
-//                        }
-//                    });
-//                }
-//            }
-//        }
+        List<ButtonBean> buttons = PublicUtils.userBean.getButtons();
+        if (buttons != null) {
+            for (ButtonBean btn : buttons) {
+                if (btn.getBtnID().equals("NotificationDocumentAddBtn")) {
+                    activityTzggImageViewAddimg.setVisibility(View.VISIBLE);
+                    activityTzggImageViewAddimg.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            onClickIndex=0;
+                            Intent intent = new Intent(Act_NoticeFile.this, Act_AddNoticeFile.class);
+                            startActivity(intent);
+                        }
+                    });
+                }
+            }
+        }
         myTitleBar.setTitlenametv("通知文件");
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);

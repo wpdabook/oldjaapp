@@ -30,7 +30,7 @@ public class PublicUtils {
      public  static String HTMLURL="http://106.15.92.195:9002";
      public  static String URLload="https://data-jx.telsafe.com.cn:8090";//全局urL
      public  static String URL=URLload+"/API/SGGL.aspx";//全局url
-     public  static Boolean IS_DEBUG_MODE = true;    //调试模式设置
+     public  static Boolean IS_DEBUG_MODE = false;    //调试模式设置
      public  static String ALIAS="SAQZ_";
      /**部分模块切换市局服务器*/
      public  static String URLload_SJ="https://data-sj.telsafe.com.cn:8088";//全局urL

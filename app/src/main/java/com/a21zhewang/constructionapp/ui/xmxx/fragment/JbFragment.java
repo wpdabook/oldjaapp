@@ -65,6 +65,7 @@ public class JbFragment extends BaseFragment implements ISetData{
     private String Area = "";
     private Double latitude;
     private Double longitude;
+    private boolean isAddMapsBtn = false;
 
     public JbFragment() {
         // Required empty public constructor
@@ -123,6 +124,12 @@ public class JbFragment extends BaseFragment implements ISetData{
 
     @Override
     public void initViews() {
+        isAddMapsBtn = ((XmxxActivity)getActivity()).isAddMapsBtn();
+        if(isAddMapsBtn == true){
+            maps.setVisibility(View.VISIBLE);
+        }else {
+            maps.setVisibility(View.GONE);
+        }
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

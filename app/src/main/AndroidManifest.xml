@@ -102,22 +102,19 @@
                    android:name="com.amap.api.v2.apikey"
                    android:value="ffa4b4f9337899f3746debdccf22b974"/>-->
         <!--安全生产管理-->
-       <!-- <meta-data
+        <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="c57b21f0e0c1d8750de71b43ba23cc61"/>-->
         <!--青山建安-->
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="ffa4b4f9337899f3746debdccf22b974"/>
        <!--  <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="72d24d8637b0f88c31fc1df045a4bd5a"/>-->
         <!--硚口建安-->
-       <!-- <meta-data
+        <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="ec049fd8c35aa66e6e6f649fe2f9a21f"/>-->
         <!--琴台建安-->
-       <!--  <meta-data
+        <!-- <meta-data
              android:name="com.amap.api.v2.apikey"
              android:value="e646068ec5c880e8e8d89941f924d731"/>-->
         <!--武昌建安-->
@@ -125,28 +122,27 @@
             android:name="com.amap.api.v2.apikey"
             android:value="bc7ace7e12b15ccae82e88de416409d5"/>-->
         <!--洪山建安-->
-       <!-- <meta-data
+        <!--<meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="5897d0403f836fa762cfb0bbcc7e92c5"/>-->
       <!--  江汉建安  -->
-       <!-- <meta-data
+      <!--  <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="df80e0d3690896ef69211a1227c6cf34"/>-->
-
         <!--江岸建安-->
-       <!-- <meta-data
+      <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="6813d9b8f12fc084e56b0969f863e1a9"/>-->
         <!--东新建安-->
-      <!--   <meta-data
+        <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="767f2c060cc80f7164960ea27316f3e1"/>-->
         <!--蔡甸建安-->
-        <!-- <meta-data
+         <!--<meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="b81891e994db7ad7c9fa6594ad580d6e"/>-->
         <!--经开（汉南）建安-->
-       <!--  <meta-data
+        <!-- <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="4a01775642e57d4509348b3a64a991de"/>-->
         <!--江夏建安-->
@@ -166,13 +162,13 @@
             android:name="com.amap.api.v2.apikey"
             android:value="a0b52ba49aa89f8eea68cd957d7554c4"/>-->
         <!--汉阳建安-->
-       <!-- <meta-data
+        <!--<meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="b69f2d5adb562a4b900de3f0b57ab649"/>-->
         <!--武汉建安-->
-       <!-- <meta-data
+        <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="1a35b6b056326b396cdf8ab4ae3a51df"/>-->
+            android:value="1a35b6b056326b396cdf8ab4ae3a51df"/>
        <!-- 重庆建工-->
         <!-- <meta-data
              android:name="com.amap.api.v2.apikey"
